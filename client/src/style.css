@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    font-family: Palatino, calibri, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    /* text-align: center; */
+}
+p {
+    font-size: 1.5em;
+    line-height: 2;
+    margin: 25px 50px;
+}
+p > a {
+    font-size: 1em;
+    text-decoration: none;
+}
+.shop > a {
+    color: #CA2017;
+}
+.shop > a:hover {
+    color: #CA2017;
+    text-decoration: underline;
+}
+
+form > button {
+    background-color: #CA2017;
+    border: none;
+    color: gold;
+    margin: 5px 50px;
+    padding: 5px 8px;
+    /* cursor: pointer; */
+    font-size: 1em;
+}
+input > authForms, .navbar > a {
+    margin: 2px 5px;
+}
+.navbar {
+    text-align: right;
+}
+img {
+    height: auto;
+    width: 90vw;
+    /* max-height: 1000%; */
+    /* max-width: 90vw; */
+    align-content: center;
+}
+.performances > img {
+    margin: 50px 50px;
+}
+.sep > img {
+    margin: 0px 50px 0px 60px;
+}
+.shop > img {
+    width: 60vw;
+    margin: 50px 200px 50px 200px;
+}
+.contact > img, .about > img {
+    width: 100vw;
+}
+iframe {
+    /* height: auto; */
+    /* width: 90vw; */
+    /* height: value; */
+    width: 80%;
+    border: none;
+    margin: 20px 50px;
+    /* height: 100%; */
+    min-height: 30em;
+    /* position: absolute; */
+}
+Form {
+    display: block;
+}
+h1 {
+    font-family: Lora, serif, calibri, sans-serif;
+    font-size: 4em;
+    font-weight: 100;
+    text-align: center;
+    margin: 75px 10px 50px 10px;
+}
+h3 {
+    font-size: 1.5em;
+    margin: 25px 50px;
+}
+h4 {
+    font-size: 1.2em;
+    margin: -15px 10px 90px 50px;
+    text-decoration: underline;
+    color: blue;
+}
+h6 {
+    font-family: Lora, serif, calibri, sans-serif;
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 200px 0px 200px;
+    line-height: 2.5em;
+}
+input {
+    display: block;
+    margin: 5px 50px;
+    width: 30%;
+    padding: 5px;
+}
+textarea {
+    width: 80%;
+    height: 200px;
+    /* margin: 2px 5px; */
+    margin: 5px 50px;
+    padding: 5px;
+    border: 1px solid rgb(177, 177, 177,.5);
+}
+
+.shop > p {
+    margin: 10px 200px 0px 200px;
+    text-align: center;
+}
+.header > a {
+    font-family: Apple Braille, -apple-system,  sans-serif;
+    background-color: white;
+    font-size: 1.2em;
+    padding: 9px 15px;
+    border: 0px; 
+    border: none;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    /* cursor: pointer; */
+  }/* .header {
+    font-family: Apple Braille, -apple-system, arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+} */
+.sep {
+    border-bottom: 0.5px solid rgb(139, 139, 139, 0.6);
+}
+.header {
+    margin: 25px 50px;
+}    
+.header > button:hover, .header > a:hover, h4:hover {
+    background: #ca2017;
+    /* border: none; */
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+}
+.header > button {
+    background: white;
+    font-size: 1.2em;
+    padding: 9px 15px;
+    font-family: Apple Braille, -apple-system, sans-serif;
+    font-weight: 700;
+    color: black;
+}
+.authForms > button, h4:hover {
+    font-size: 1.2em;
+    padding: 9px 15px 9px 15px;
+    border-radius: 3px;
+    font-family: Apple Braille, -apple-system, sans-serif;
+    font-weight: 700;
+    color: white;
+}/* .header > a {
+    color: #222;
+    display: block;
+    font-size: 15px;
+    font-family: Apple Braille, -apple-system, arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding: 9px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-wrap: break-word;
+} */
+.videos {
+    text-align: center;
+}
+.fb > img {
+    width: 150px;
+}
+/*
+.fb-container {
+    display: flex;
+    flex-direction: row;
+    background-image: url("https://scontent.fslc1-1.fna.fbcdn.net/v/t1.0-0/c33.0.200.200a/p200x200/56214439_2301241610132448_3864521567606145024_n.jpg?_nc_cat=108&_nc_ht=scontent.fslc1-1.fna&oh=d49759cb3fc5e4e6b0b6fa6c45660b51&oe=5D5BD30A");
+    display: inline-block;
+}
+.fb-container > div {
+    margin: 5px;
+    padding: 15px;
+    border: 5px solid gray;
+    width: 350px;
+    height: 200px;
+}
+.boxes {
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+}
+*/
+.app-container {
+    height: 100%;
+    width: 100vw;
+    background-color: lightgreen;
+    z-index: -1;
+}
+.app-container > button {
+    opacity: 0.7;
+    position: absolute;
+    position: fixed;
+    left: 25px;
+    top: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+.nav > a {
+    color: #e25822;
+    font-size: 2em;
+    text-decoration: none;
+}
+.nav > a:hover {
+    font-style: italic;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+p > a:hover {
+    font-style: italic;
+    font-weight: 600;
+    color: #CA2017;
+}
+.nav {
+    z-index: 1;
+    height: 100%;
+    width: 200px;
+    color: pink;
+    background-color: black;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    transition: left 1200ms cubic-bezier(0.42,0,0.58,1);
+}
+.nav > p {
+    font-size: 2em;
+}
+.nav-closed {
+    left: -200px;
+}
+.nav-open {
+    left: 0px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/207353/pexels-photo-207353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    opacity: 0.88;
+    /* background-color: #6673e7; */
+    z-index: 1;
+    background-size: 100%;
+    position: fixed;
+    /* position: sticky; */
+    transition: right 1200ms cubic-bezier(0.42,0,0.58,1);
+}
+.overlay-open {
+    right: 0px;
+}
+.overlay-closed {
+    right: -100vw;
+}
+
+
+/* .container {
+    margin: 5px 10px;
+    padding: 5px 10px;
+} */
+/* .app-wrapper{
+    height: 100vh;
+    height: 200px;
+} */
+/* .login-wrapper{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+} */
+/* form p {
+    color: firebrick;
+} 
+<Menu navToggler={this.navToggler} navToggle={this.state.navToggle}/>
+*/
