@@ -14,7 +14,20 @@ const Navbar = (props) => {
         <a href="/music">Music</a>
         <a href="/shop">Shop</a>
         <a href="/contact">Contact</a>
-        <Link to="/auth">Login/Sign Up</Link>
+        {/* <Link to="/auth">Login/Sign Up</Link> */}
+        {
+            !props.token ?
+                <>
+                    <Link to="/auth">Login/Sign Up</Link>
+                </>
+            :
+                <>
+                    <Link onClick={() => props.logout()} to="/">Logout</Link>
+                    {/* <div className="nav-link">
+                        <button onClick={() => props.logout()}>Logout</button>
+                    </div> */}
+                </>
+            }
     </div>
     )
 }

@@ -9,8 +9,8 @@ const Header = () => {
     }
     return (
         <div className="sep">
-            <a href="https://allredfiretribe.wordpress.com" target='_blank' rel="noopener noreferrer"><img src="https://allredfiretribe.files.wordpress.com/2018/08/cropped-allredfiretribe011.jpg" alt="not rendered"/></a>
-            <div className="header" style={styles}>
+            <a className="header" href="https://allredfiretribe.wordpress.com" target='_blank' rel="noopener noreferrer"><img src="https://allredfiretribe.files.wordpress.com/2018/08/cropped-allredfiretribe011.jpg" alt="not rendered"/></a>
+            <div className="header-nav" style={styles}>
             <a href="/">HOME</a>
             <a href="/performances">FIRE SPINNING</a>
             <a href="/videos">YOUTUBE</a>

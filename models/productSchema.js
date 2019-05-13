@@ -15,7 +15,7 @@ const productSchema = new Schema({
         required: true
     },
     imgUrl: {
-        type: URL
+        type: Object
     },
     inStock: {
         type: Boolean,

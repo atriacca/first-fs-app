@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 export default class Form extends Component {
     constructor(props){
@@ -34,8 +34,8 @@ export default class Form extends Component {
     }
 }
 
-Form.propTypes = {
-    inputs:         PropTypes.object.isRequired,
-    submit:         PropTypes.func.isRequired,
-    render:         PropTypes.func.isRequired
-}
+// Form.propTypes = {
+//     inputs:         PropTypes.object.isRequired,
+//     submit:         PropTypes.func.isRequired,
+//     render:         PropTypes.func.isRequired
+// }

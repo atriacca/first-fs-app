@@ -1,6 +1,6 @@
 const express = require('express')
 const orderRouter = express.Router()
-const Order = require('../models/order.js')
+const Order = require('../models/orderSchema.js')
 
 // Post 
 orderRouter.post("/", (req, res, next) => {

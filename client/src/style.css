@@ -50,8 +50,8 @@ img {
 .performances > img {
     margin: 50px 50px;
 }
-.sep > img {
-    margin: 0px 50px 0px 60px;
+.header > img {
+    margin: 0px 50px 0px 50px;
 }
 .shop > img {
     width: 60vw;
@@ -118,7 +118,7 @@ textarea {
     margin: 10px 200px 0px 200px;
     text-align: center;
 }
-.header > a {
+.header-nav > a {
     font-family: Apple Braille, -apple-system,  sans-serif;
     background-color: white;
     font-size: 1.2em;
@@ -130,7 +130,7 @@ textarea {
     text-align: center;
     text-decoration: none;
     /* cursor: pointer; */
-  }/* .header {
+  }/* .header-nav {
     font-family: Apple Braille, -apple-system, arial, sans-serif;
     display: flex;
     justify-content: space-around;
@@ -138,17 +138,17 @@ textarea {
 .sep {
     border-bottom: 0.5px solid rgb(139, 139, 139, 0.6);
 }
-.header {
+.header-nav {
     margin: 25px 50px;
 }    
-.header > button:hover, .header > a:hover, h4:hover {
+.header-nav > button:hover, .header-nav > a:hover, h4:hover {
     background: #ca2017;
     /* border: none; */
     border-radius: 3px;
     color: #fff;
     text-decoration: none;
 }
-.header > button {
+.header-nav > button {
     background: white;
     font-size: 1.2em;
     padding: 9px 15px;
@@ -163,7 +163,7 @@ textarea {
     font-family: Apple Braille, -apple-system, sans-serif;
     font-weight: 700;
     color: white;
-}/* .header > a {
+}/* .header-nav > a {
     color: #222;
     display: block;
     font-size: 15px;

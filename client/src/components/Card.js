@@ -3,7 +3,8 @@ import React from "react";
 const Card = (props) => {
 
     return (
-      <div style={styles.div}>
+    //   <div style={styles.div}>
+      <div>
           <h2>{props.product.title}</h2>
           <p>{props.product.description}</p>
           <p>{props.product.price.toLocaleString("en-US", { style: "currency", currency: "USD" })}</p>

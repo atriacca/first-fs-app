@@ -9,11 +9,16 @@ const PORT = process.env.PORT || 7000
 // Global middleware
 app.use(express.json())
 app.use(morgan('dev'))
+app.use("./api", expressJwt({ secret: process.env.SECRET })) // provides req.user
 
 // DB connect
 mongoose.connect(
     "mongodb://localhost:27017/first-fs-app",
-    {useNewUrlParser: true},
+    {
+        useNewUrlParser: true,
+        useFindAndModify: true,
+        useCreateIndex: true
+    },
     () => console.log("connected to the DB")
 )
 

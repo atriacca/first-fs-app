@@ -8,7 +8,7 @@ import Menu from "./components/Menu"
 import Videos from "./components/Videos"
 import Music from "./components/Music"
 import Contact from "./components/Contact"
-import Performances from "./components/xPerformances"
+import Performances from "./components/Performances"
 import Shop from "./components/Shop"
 import FacebookTile from "./components/FacebookTile"
 // import OrderPage from "./components/xOrderPage"
@@ -22,6 +22,7 @@ const App = (props) => {
     return (
         <div>
             <Menu />
+            {/* <Menu navToggler={this.navToggler} navToggle={this.state.navToggle}/> */}
             <div>
             <Header />
             { token && <Navbar logout={logout}/> }
@@ -36,6 +37,12 @@ const App = (props) => {
                 <Route path="/performances" component={Performances}/>
                 {/* <Route exact path="/"  render={rProps => !token ? <Auth {...rProps}/> : <Redirect to="/orders"/>} /> */}
                 {/* <ProtectedRoute 
+                    path="/orders"
+                    token={token}
+                    component={OrderPage}
+                    redirectTo="/"
+                /> */}
+                {/* <ProtectedRoute 
                     path="/profile"
                     token={token}
                     component={Profile}
@@ -44,6 +51,12 @@ const App = (props) => {
             </Switch>
         </div>
         <FacebookTile />
+            {/* <Switch>
+                <Route About />
+                <Route exact path={"/"} render={() => !props.token ? <Auth /> : <Redirect to="/orders" />} />
+                <Route path="/signup" component={Signup}/>
+                <ProtectedRoute path="/" component={Orders}/>
+            </Switch> */}
         </div>
     )
 }

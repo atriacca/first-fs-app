@@ -1,6 +1,6 @@
 const express = require('express')
 const authRouter = express.Router()
-const User = require('../models/user.js')
+const User = require('../models/userSchema.js')
 const jwt = require('jsonwebtoken')
 
 // Signup - POST
@@ -17,7 +17,7 @@ authRouter.post("/signup", (req, res, next) => {
         // Does that user already exists/username is taken
         if(user !== null){
             res.status(400)
-            return next(new Error("That username already exists!"))
+            return next(new Error("Sorry, but that username is already taken."))
         }
         // Create user
         const newUser = new User(req.body)
@@ -32,7 +32,6 @@ authRouter.post("/signup", (req, res, next) => {
         })
     })
 })
-
 
 // Login - POST
     // Does the username requested exist in the DB
@@ -53,7 +52,7 @@ authRouter.post("/login", (req, res, next) => {
         // Does the user's password attempt match the encrypted password in the DB
         user.checkPassword(req.body.password, (err, isMatch) => {
             if(err) {
-                res.status(500)
+                res.status(401)
                 return next(err)
             }
             // Did the user's password match

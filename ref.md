@@ -3,6 +3,13 @@ MVP:
 2. Add token-auth
 3. Expand product offerings and functionality
 
+$push mongodb to add photos and such to arrays in productSchema
+
+https://www.facebook.com/pg/firespinning/events/?ref=page_internal
+
+What goes into making one of my Electric White Wizard Fire Staffs. And why they are so cool.
+https://www.facebook.com/firespinning/videos/2150147985241812/?t=60
+
 FB CAF: https://scontent.fslc1-1.fna.fbcdn.net/v/t1.0-0/c33.0.200.200a/p200x200/56214439_2301241610132448_3864521567606145024_n.jpg?_nc_cat=108&_nc_ht=scontent.fslc1-1.fna&oh=d49759cb3fc5e4e6b0b6fa6c45660b51&oe=5D5BD30A
 
 https://scontent.fslc1-1.fna.fbcdn.net/v/t1.0-0/p180x540/56214461_2301241606799115_8027261054083923968_o.jpg?_nc_cat=110&_nc_ht=scontent.fslc1-1.fna&oh=5e4b625ece6b1ed6a2bdfc965e9d2e84&oe=5D641C38

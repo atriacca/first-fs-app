@@ -13,7 +13,7 @@ const userSchema = new Schema({
     },
     email: {
         type: String,
-        required: true
+        required: false
     },
     username: {
         type: String,
@@ -37,10 +37,10 @@ const userSchema = new Schema({
                             // Model Name    // Model Blueprint
 userSchema.pre("save", function (next) {
     const user = this
-    if (!user.isModified("password")) return next()
-    bcrypt.hash(user.password, 10, (err, hash) => {
+    if (!user.isModified("password")) return next() // telling bcrypt to hash if hasn't already
+    bcrypt.hash(user.password, 10, (err, hashed) => {
         if (err) return next(err)
-        user.password = hash
+        user.password = hashed
         next()
     })
 })
