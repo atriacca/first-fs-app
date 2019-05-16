@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
+
+const AppContext = React.createContext();
 const orderAxios = axios.create();
 
 orderAxios.interceptors.request.use((config)=>{
@@ -8,7 +10,6 @@ orderAxios.interceptors.request.use((config)=>{
     return config;
 })
 
-const AppContext = React.createContext();
 
 export class AppContextProvider extends Component {
     constructor() {

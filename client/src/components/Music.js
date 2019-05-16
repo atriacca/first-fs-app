@@ -2,7 +2,7 @@ import React from 'react'
 
 const Music = () => {
     return (
-        <div className="Music">
+        <div className="music">
             <h1>Music</h1>
             <p>I am a beautiful, Loving, Creative, Inspiring, Powerful Man of Light and Love.. and my music very much reflects that...</p>
             <p>Follow me on Soundcloud: <a href="https://soundcloud.com/clayton-allred-1" target='_blank' rel="noopener noreferrer">https://soundcloud.com/clayton-allred-1</a></p>

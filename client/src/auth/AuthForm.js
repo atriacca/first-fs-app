@@ -2,50 +2,33 @@ import React from 'react'
 // import PropTypes from 'prop-types'
 
 const AuthForm = props => {
-    const { handleChange, handleSubmit, inputs: { firstName, lastName, email, username, password }, btnText } = props
+    const { handleChange, handleSubmit, inputs: { username, password }, btnText } = props
+    const styles = {
+        display: 'flex',
+        flex: "1 1 0",
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        size: "50",
+        textAlign: "center"
+    }
     return (
-        <div>
-            <form onSubmit={handleSubmit} className="authForms">
-                <h3>Create an account</h3>
-                <div>
-                    <input
-                        type="text"
-                        name="firstName"
-                        value={ firstName }
-                        onChange={handleChange}
-                        placeholder="First name (required)"/>
-                    <input
-                        type="text"
-                        name="lastName"
-                        value={ lastName }
-                        onChange={handleChange}
-                        placeholder="Last name"/>
-                </div>
-                <div>
-                    <input
-                        type="email"
-                        name="email"
-                        value={ email }
-                        onChange={handleChange}
-                        placeholder="Email address (required)"/>
-                    </div>
-                    <div>
-                    <input 
-                        type="text" 
-                        name="username" 
-                        value={ username }
-                        onChange={handleChange} 
-                        placeholder="Username (required)"/>
-                    <input 
-                        type="text" 
-                        name="password" 
-                        value={ password }
-                        onChange={handleChange} 
-                        placeholder="Password (required)"/>
-                </div>
-                <button>{ btnText }</button>
-            </form>
-        </div>
+        <div style={styles}>
+            <form onSubmit={handleSubmit}>
+            <input 
+                type="text" 
+                name="username" 
+                value={ username }
+                onChange={handleChange} 
+                placeholder="Username"/>
+            <input 
+                type="text" 
+                name="password" 
+                value={ password }
+                onChange={handleChange} 
+                placeholder="Password"/>
+            <button>{ btnText }</button>
+        </form>
+            </div>
     )
 }
 

@@ -3,11 +3,11 @@ import React from 'react'
 const Performances = (props) => {
     const { handleChange, handleSubmit, fullName, email, phone, website, comment } = props
     return (
-        <div className="performances">
+        <div>
             <h1>Fire Spinning</h1>
             <img src="https://allredfiretribe.files.wordpress.com/2018/08/13423812_1741681022755179_4112663154152107891_n.jpg" alt="Unable to render"/>
-            <p>Please contact us for more information on rates and booking fire spinning performances for private parties or events.</p>
-            <form onSubmit={handleSubmit}>
+            <p>Please contact us for more information on rates and booking fire spinning performances for private parties and events.</p>
+            <form onSubmit={handleSubmit} className="performances">
             {/* <div> */}
                 {/* <h3>Please provide your contact info and description of your needs with prospective dates if possible.</h3> */}
                 <input 

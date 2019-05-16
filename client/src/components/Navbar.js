@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 // import PropTypes from 'prop-types'
 
 const Navbar = (props) => {
-    const { login, signup, logout } = props
+    // const { logout } = props
     return (
         <div 
         onClick={props.navToggler}
@@ -14,7 +14,7 @@ const Navbar = (props) => {
         <a href="/music">Music</a>
         <a href="/shop">Shop</a>
         <a href="/contact">Contact</a>
-        <Link to="/auth">Login/Sign Up</Link>
+        {/* <Link to="/profile">Profile</Link> */}
     </div>
     )
 }

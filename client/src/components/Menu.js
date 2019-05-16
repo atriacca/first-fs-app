@@ -17,7 +17,7 @@ class Menu extends Component {
 
     render() {
         return (
-            <div className="page app-container">
+            <div className="app-container">
                 <div 
                     onClick={this.navToggler}
                     className={`overlay overlay-${this.state.navToggle ? "open" : "closed"}`}></div>

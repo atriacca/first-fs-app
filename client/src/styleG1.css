@@ -17,16 +17,16 @@ p > a {
     font-size: 1em;
     text-decoration: none;
 }
-/* .shop > a {
+.shop > a {
     color: #CA2017;
 }
 .shop > a:hover {
     color: #CA2017;
     text-decoration: underline;
-} */
+}
 Form > button {
     background-color: #CA2017;
-    margin: 5px 50px;
+    /* margin: 5px 50px; */
     font-size: 1.2em;
     padding: 9px 15px;
     border-radius: 3px;
@@ -91,7 +91,7 @@ h6 {
     font-style: italic;
     font-size: 1.2em;
     text-align: center;
-    margin: 20px 200px 0px 200px;
+    margin: 10px 200px 0px 200px;
     line-height: 2.5em;
 }
 input {
@@ -180,6 +180,26 @@ textarea {
 .fb > img {
     width: 150px;
 }
+/*
+.fb-container {
+    display: flex;
+    flex-direction: row;
+    background-image: url("https://scontent.fslc1-1.fna.fbcdn.net/v/t1.0-0/c33.0.200.200a/p200x200/56214439_2301241610132448_3864521567606145024_n.jpg?_nc_cat=108&_nc_ht=scontent.fslc1-1.fna&oh=d49759cb3fc5e4e6b0b6fa6c45660b51&oe=5D5BD30A");
+    display: inline-block;
+}
+.fb-container > div {
+    margin: 5px;
+    padding: 15px;
+    border: 5px solid gray;
+    width: 350px;
+    height: 200px;
+}
+.boxes {
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+}
+*/
 .app-container {
     height: 100%;
     width: 100vw;
@@ -258,13 +278,14 @@ p > a:hover {
 .overlay-closed {
     right: -100vw;
 }
+
 .card > img {
     border: 1px solid black;
     width: 270px;
     max-height: 400;
     margin: 5px 5px;
 }
-.card > h3, .card > p {
+.card > h3, p {
     margin: 5px;
     padding: 0px;
     text-align: center;
@@ -275,24 +296,75 @@ p > a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
 }
+/* 
+    //     display: "grid",
+    //     gridTemplateColumns: "1fr 1fr 1fr",
+    //     gridRowHeight: "200px",
+    //     textAlign: "center",
 
+.shop-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    justify-content: space-around;
+    background-color: #e25822;
+    width: 100%;
+    height: auto;
+    border: 5px solid gray;
+}
+.shop-container > div {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+.shop-boxes {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 100px;
+}
+
+.card {
+        width: 300px;
+        height: 500px;
+        border: 1px solid lightgreen;
+    
+    }
+            display: flex;
+            flex: 1 1 0;
+            flex-direction: row;
+            justify-content: space-around;
+
+.container {
+    margin: 5px 10px;
+    padding: 5px 10px;
+} */
+/* .app-wrapper{
+    height: 100vh;
+    height: 200px;
+} */
+/* .login-wrapper{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+} */
+/* Form p {
+    color: firebrick;
+} 
+<Menu navToggler={this.navToggler} navToggle={this.state.navToggle}/>
+        gridTemplateColumns: "1fr 1fr 1fr",
+@media only screen and (max-width: 666px){
+
+*/
 @media only screen and (max-width: 1000px){
     .shop {
         grid-template-columns: 1fr 1fr;
     }
-    h6 {
-        margin: 20px 150px 0px 150px;
-        line-height: 2.2em;
-    }
 }
-
 @media only screen and (max-width: 666px){
     .shop {
         grid-template-columns: 1fr;
-    }
-    h6 {
-        margin: 20px 80px 0px 80px;
-        line-height: 2em;
     }
     .top-nav {
         display: none;
@@ -300,8 +372,5 @@ p > a:hover {
     .top-nav > button {
         font-size: .8em;
         padding: 4px 7px;
-    }
-    .contact > input, .shop > input, .performances > input {
-        width: 50%;
     }
 }

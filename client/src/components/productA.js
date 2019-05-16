@@ -26,29 +26,20 @@ let products = [
         ]
     },{
         "title": "Ignite and Unite Organic Cotton T shirts",
-        "description": "100% Organic Cotton T shirt. 
-        The logo on these shirst and its message represent everything I am about spreading to the world...
-        I think the big message is to Ignite and Unite with your local community and learn how to work with one another inspiring and empowering growth spiritually, mentally, emotionally and physically. Remember you have the power to create and every choice you make is inspiring something.. be a walking example of love, peace and detachment. Loving you all. ~Clayton Allred , AllRedFireTribe.com
-        THIS DESIGN WAS CREATED BY RENEE SARAVATI & CLAYTON ALLRED... IT IS A SEED OF LIFE, WITH A FIRE MANDALA, AND THE I-CHING... THIS IS ABOUT DIVINE AWARENESS AND TRANSFORMATION. IGNITE THE FLAME IN YOUR HEART AND UNITE WITH OTHERS TO HELP WALK WITH HUMANITY INTO A LOVE VIBRATION.",
+        "description": "100% Organic Cotton T shirt. The logo on these shirst and its message represent everything I am about spreading to the world... I think the big message is to Ignite and Unite with your local community and learn how to work with one another inspiring and empowering growth spiritually, mentally, emotionally and physically. Remember you have the power to create and every choice you make is inspiring something.. be a walking example of love, peace and detachment. Loving you all. ~Clayton Allred , AllRedFireTribe.com  THIS DESIGN WAS CREATED BY RENEE SARAVATI & CLAYTON ALLRED... IT IS A SEED OF LIFE, WITH A FIRE MANDALA, AND THE I-CHING... THIS IS ABOUT DIVINE AWARENESS AND TRANSFORMATION. IGNITE THE FLAME IN YOUR HEART AND UNITE WITH OTHERS TO HELP WALK WITH HUMANITY INTO A LOVE VIBRATION.",
         "price": 30.00,
         "inStock": true,
         "images": ["https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/56614270_1616603078443003_6689621097794502656_n.jpg?_nc_cat=103&_nc_ht=scontent.fslc1-2.fna&oh=70456cf67aacd5e04e4d0700e3a69954&oe=5D64AF71
         https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/p403x403/56769851_2198739310207981_8699769361163878400_n.jpg?_nc_cat=109&_nc_ht=scontent.fslc1-1.fna&oh=8aeae13e472071c2b1cab65030488def&oe=5D67FE87"]
     },{
         "title": "Allred Fire Tribe Ignite and Unite Hoodie ( Black with Red print)",
-        "description": "High Quality hoodie with zipper and deep pockets with amazing long lasting ink.
-        The logo on these hoodies and its message represent everything I am about spreading to the world...
-        I think the big message is to Ignite and Unite with your local community and learn how to work with one another inspiring and empowering growth spiritually, mentally, emotionally and physically. Remember you have the power to create and every choice you make is inspiring something.. be a walking example of love, peace and detachment. Loving you all. ~Clayton Allred , AllRedFireTribe.com
-        THIS DESIGN WAS CREATED BY RENEE SARAVATI & CLAYTON ALLRED... IT IS A SEED OF LIFE, WITH A FIRE MANDALA, AND THE I-CHING... THIS IS ABOUT DIVINE AWARENESS AND TRANSFORMATION. IGNITE THE FLAME IN YOUR HEART AND UNITE WITH OTHERS TO HELP WALK WITH HUMANITY INTO A LOVE VIBRATION.",
+        "description": "High Quality hoodie with zipper and deep pockets with amazing long lasting ink. The logo on these shirst and its message represent everything I am about spreading to the world... I think the big message is to Ignite and Unite with your local community and learn how to work with one another inspiring and empowering growth spiritually, mentally, emotionally and physically. Remember you have the power to create and every choice you make is inspiring something.. be a walking example of love, peace and detachment. Loving you all. ~Clayton Allred , AllRedFireTribe.com  THIS DESIGN WAS CREATED BY RENEE SARAVATI & CLAYTON ALLRED... IT IS A SEED OF LIFE, WITH A FIRE MANDALA, AND THE I-CHING... THIS IS ABOUT DIVINE AWARENESS AND TRANSFORMATION. IGNITE THE FLAME IN YOUR HEART AND UNITE WITH OTHERS TO HELP WALK WITH HUMANITY INTO A LOVE VIBRATION.",
         "price": 50.00,
         "inStock": true,
         "images": ["https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p526x296/56763897_2018058188319784_7271610143022776320_n.jpg?_nc_cat=106&_nc_ht=scontent.fslc1-2.fna&oh=86d508fece98ed739d0786fb03de1209&oe=5D586BC8"]
     },{
         "title": "Ignite and Unite Hoodies (Black with White Print)",
-        "description": "High Quality hoodie with zipper and deep pockets with amazing long lasting ink,
-        The logo on these hoodies and its message represent everything I am about spreading to the world...
-        I think the big message is to Ignite and Unite with your local community and learn how to work with one another inspiring and empowering growth spiritually, mentally, emotionally and physically. Remember you have the power to create and every choice you make is inspiring something.. be a walking example of love, peace and detachment. Loving you all. ~Clayton Allred , AllRedFireTribe.com
-        THIS DESIGN WAS CREATED BY RENEE SARAVATI & CLAYTON ALLRED... IT IS A SEED OF LIFE, WITH A FIRE MANDALA, AND THE I-CHING... THIS IS ABOUT DIVINE AWARENESS AND TRANSFORMATION. IGNITE THE FLAME IN YOUR HEART AND UNITE WITH OTHERS TO HELP WALK WITH HUMANITY INTO A LOVE VIBRATION.",
+        "description": "High Quality hoodie with zipper and deep pockets with amazing long lasting ink. The logo on these shirst and its message represent everything I am about spreading to the world... I think the big message is to Ignite and Unite with your local community and learn how to work with one another inspiring and empowering growth spiritually, mentally, emotionally and physically. Remember you have the power to create and every choice you make is inspiring something.. be a walking example of love, peace and detachment. Loving you all. ~Clayton Allred , AllRedFireTribe.com  THIS DESIGN WAS CREATED BY RENEE SARAVATI & CLAYTON ALLRED... IT IS A SEED OF LIFE, WITH A FIRE MANDALA, AND THE I-CHING... THIS IS ABOUT DIVINE AWARENESS AND TRANSFORMATION. IGNITE THE FLAME IN YOUR HEART AND UNITE WITH OTHERS TO HELP WALK WITH HUMANITY INTO A LOVE VIBRATION.",
         "price": 50.00,
         "inStock": true,
         "images": ["https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/p180x540/56696073_1357656201026185_4375325867820187648_n.jpg?_nc_cat=104&_nc_ht=scontent.fslc1-1.fna&oh=b7bc47a6e27d346ea5a28627ec5dd0ee&oe=5D776397"]

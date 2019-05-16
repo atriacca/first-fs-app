@@ -8,13 +8,13 @@ import Menu from "./components/Menu"
 import Videos from "./components/Videos"
 import Music from "./components/Music"
 import Contact from "./components/Contact"
-import Performances from "./components/xPerformances"
+import Performances from "./components/Performances"
 import Shop from "./components/Shop"
 import FacebookTile from "./components/FacebookTile"
 // import OrderPage from "./components/xOrderPage"
 import Auth from "./auth/Auth"
 import { withUser } from './context/UserProvider'
-// import ProtectedRoute from "./auth/ProtectedRoute"
+import ProtectedRoute from './shared/ProtectedRoute.js'
 // import PropTypes from 'prop-types'
 
 const App = (props) => {
@@ -23,27 +23,50 @@ const App = (props) => {
         <div>
             <Menu />
             <div>
+            { token && <Auth logout={logout}/> }
             <Header />
-            { token && <Navbar logout={logout}/> }
             <Switch>
-                <Route exact path="/" component={About}/>
-                <Route path="/auth" component={Auth}/>
-                <Route path="/videos" component={Videos}/>
-                <Route path="/music" component={Music}/>
-                <Route path="/contact" component={Contact}/>
-                <Route path="/contact" component={Contact}/>
-                <Route path="/shop" component={Shop}/>
-                <Route path="/performances" component={Performances}/>
-                {/* <Route exact path="/"  render={rProps => !token ? <Auth {...rProps}/> : <Redirect to="/orders"/>} /> */}
-                {/* <ProtectedRoute 
-                    path="/profile"
+                <Route exact path="/" render={rProps => !token ? <Auth {...rProps}/> : <Redirect to="/home"/>} />
+                <Route 
+                    path="/home" 
                     token={token}
-                    component={Profile}
+                    component={About}
                     redirectTo="/"
-                    username={username}/> */}
+                />
+                {/* <Route path="/auth" component={Auth}/> */}
+                <ProtectedRoute 
+                    path="/videos" 
+                    token={token}
+                    component={Videos}
+                    redirectTo="/"
+                />
+                <ProtectedRoute 
+                    path="/music" 
+                    token={token}
+                    component={Music}
+                    redirectTo="/"
+                />
+                <ProtectedRoute 
+                    path="/contact" 
+                    token={token}
+                    component={Contact}
+                    redirectTo="/"
+                />
+                <ProtectedRoute 
+                    path="/shop" 
+                    token={token}
+                    component={Shop}
+                    redirectTo="/"
+                />
+                <ProtectedRoute 
+                    path="/performances" 
+                    token={token}
+                    component={Performances}
+                    redirectTo="/"
+                />
             </Switch>
-        </div>
         <FacebookTile />
+        </div>
         </div>
     )
 }

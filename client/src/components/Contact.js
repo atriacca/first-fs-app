@@ -3,10 +3,10 @@ import React from 'react'
 const Contact = (props) => {
     const { handleChange, handleSubmit, fullName, email, phone, website, comment } = props
     return (
-        <div className="contact">
+        <div>
             <img src="https://allredfiretribe.files.wordpress.com/2018/08/13445533_1741681716088443_7149686734532124140_n.jpg?w=960" alt="Unable to render"/>
             <h1>Contact</h1>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="contact">
                 <input 
                     type="text" 
                     name="fullName" 
@@ -32,7 +32,6 @@ const Contact = (props) => {
                     onChange={handleChange} 
                     placeholder="Website"/>
                 <textarea 
-                    // className="comment"
                     width="70%" 
                     height="500px" 
                     type="text" 

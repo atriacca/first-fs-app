@@ -1,6 +1,6 @@
 import React from 'react'
 
-function About() {
+function About(props) {
     return (
         <div className="about">
             <img width="100%" src="https://allredfiretribe.files.wordpress.com/2018/11/clayton.jpg?w=1000" alt="Unable to render"/>

@@ -1,3 +1,5 @@
+User validation failed: firstName: Path `firstName` is required., username: Path `username` is required., password: Path `password` is required.
+
 MVP:
 1. Duplicate existing site, https://allredfiretribe.wordpress.com/
 2. Add token-auth

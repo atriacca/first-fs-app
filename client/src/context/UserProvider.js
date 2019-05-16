@@ -28,7 +28,10 @@ class UserProvider extends Component {
                 const { user, token } = res.data
                 localStorage.setItem("user", JSON.stringify(user))
                 localStorage.setItem("token", token)
-                this.setState({ user, token })
+                this.setState({ 
+                    user, 
+                    token 
+                })
             })
             .catch(err => this.handleAuthErr(err))
     }
@@ -39,7 +42,10 @@ class UserProvider extends Component {
                 const { user, token } = res.data
                 localStorage.setItem("user", JSON.stringify(user))
                 localStorage.setItem("token", token)
-                this.setState({ user, token })
+                this.setState({ 
+                    user, 
+                    token 
+                })
             })
             .catch(err => this.handleAuthErr(err))
     }
@@ -47,7 +53,11 @@ class UserProvider extends Component {
     logout = () => {
         localStorage.removeItem("user")
         localStorage.removeItem("token")
-        this.setState({ user: {}, token: "", orders: [] })
+        this.setState({
+            orders: [],
+            user: {},
+            token: ""
+        })
     }
 
     handleAuthErr = (err) => {
@@ -56,8 +66,20 @@ class UserProvider extends Component {
         })
     }
 
+    // componentDidMount() {
+    //     this.getOrders()
+    // }
+
+    getOrders = () => {
+        orderAxios.get("/api/orders")
+        .then(res => {
+            this.setState({ orders: res.data })
+        })
+        .catch(err => console.log(err.response.data.errMsg))
+    }
+    
     addOrder = (newOrder) => {
-        orderAxios.post("/api/order", newOrder)
+        orderAxios.post("/api/orders", newOrder)
             .then(res => {
                 this.setState(prevState => ({
                     orders: [...prevState.orders, res.data]
@@ -65,15 +87,7 @@ class UserProvider extends Component {
             })
             .catch(err => console.log(err.response.data.errMsg))
     }
-
-    getUserOrders = () => {
-        orderAxios.get("/api/order")
-            .then(res => {
-                this.setState({ orders: res.data })
-            })
-            .catch(err => console.log(err.response.data.errMsg))
-    }
-
+    
     render(){
         return(
             <UserContext.Provider
@@ -83,7 +97,7 @@ class UserProvider extends Component {
                     login: this.login,
                     logout: this.logout,
                     addOrder: this.addOrder,
-                    getUserOrders: this.getUserOrders
+                    getOrders: this.getOrders
                 }}>
                 { this.props.children }
             </UserContext.Provider>

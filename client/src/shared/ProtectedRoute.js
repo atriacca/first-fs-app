@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import { Route, Redirect } from 'react-router-dom'
 
 const ProtectedRoute = props => {
@@ -12,12 +12,12 @@ const ProtectedRoute = props => {
     )
 }
 
-ProtectedRoute.propTypes = {
-    token:          PropTypes.string.isRequired,
-    component:      PropTypes.func.isRequired,
-    path:           PropTypes.string.isRequired,
-    redirectTo:     PropTypes.string.isRequired,
-    rest:           PropTypes.array
-}
+// ProtectedRoute.propTypes = {
+//     token:          PropTypes.string.isRequired,
+//     component:      PropTypes.func.isRequired,
+//     path:           PropTypes.string.isRequired,
+//     redirectTo:     PropTypes.string.isRequired,
+//     rest:           PropTypes.array
+// }
 
 export default ProtectedRoute

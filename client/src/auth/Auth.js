@@ -1,25 +1,27 @@
 import React from 'react'
-import AuthForm from './AuthForm.js'
-import LoginForm from './LoginForm.js'
-import Form from '../shared/Form.js'
-import Toggle from '../shared/Toggle.js'
-import PropTypes from 'prop-types'
-import { withUser } from '../context/UserProvider.js'
+import AuthForm from './AuthForm'
+import Logout from './TopNav'
+import About from "../components/About"
+import Form from '../shared/Form'
+import Toggle from '../shared/Toggle'
+// import PropTypes from 'prop-types'
+import { withUser } from '../context/UserProvider'
 
 const Auth = (props) => {
-    const { signup, login, authErr } = props
+    const { signup, login, authErr, token, logout } = props
     return (
-        <div className="sep">
-            <Toggle render={({on, toggler}) => 
+        <div>
+            { token ? <Logout logout={logout}/> :
+             <Toggle render={({on, toggler}) => 
              !on ?
                 <>
                     <Form 
                         inputs={{ username: "", password: "" }}
                         submit={inputs => login(inputs)}
-                        render={formProps => <LoginForm {...formProps} btnText="Login"/>}
+                        render={formProps => <AuthForm {...formProps} btnText="Login"/>}
                     />
                     <p style={{ color: "red" }}>{authErr}</p>
-                    <h4 onClick={toggler}>Go to new account page.</h4>
+                    <h4 onClick={toggler}>Go to new account page</h4>
                 </>
                 :
                 <>
@@ -29,17 +31,18 @@ const Auth = (props) => {
                         render={formProps => <AuthForm {...formProps} btnText="Sign Up"/>}
                     />
                     <p style={{ color: "red" }}>{authErr}</p>
-                    <h4 onClick={toggler}>Go to login page.</h4>
+                    <h4 onClick={toggler}>Go to login page</h4>
                 </>
             }/>
+        }
         </div>
     )
 }
 
-Auth.propTypes = {
-    authErr: PropTypes.string.isRequired,
-    signup: PropTypes.func.isRequired,
-    login: PropTypes.func.isRequired,
-}
+// Auth.propTypes = {
+//     authErr: PropTypes.string.isRequired,
+//     signup: PropTypes.func.isRequired,
+//     login: PropTypes.func.isRequired,
+// }
 
 export default withUser(Auth)
