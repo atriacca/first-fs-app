@@ -6,7 +6,14 @@
     font-family: Palatino, calibri, sans-serif;
     font-size: 14px;
     font-weight: lighter;
-    /* text-align: center; */
+    /* background-image: url("https://images.pexels.com/photos/672636/pexels-photo-672636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    ;
+    /* text-align: center; 
+    https://images.pexels.com/photos/1749/fire-orange-emergency-burning.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+    https://images.pexels.com/photos/216634/pexels-photo-216634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+    https://images.pexels.com/photos/216635/pexels-photo-216635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+    
+    */
 }
 p {
     font-size: 1.5em;
@@ -17,9 +24,10 @@ p > a {
     font-size: 1em;
     text-decoration: none;
 }
-/* .shop > a {
-    color: #CA2017;
+.shop > a {
+    text-decoration: none;
 }
+/* 
 .shop > a:hover {
     color: #CA2017;
     text-decoration: underline;
@@ -47,11 +55,23 @@ img {
     align-content: center;
 }
 .top > img {
-    margin: 0px 50px 0px 50px;
+    margin: 0px 50px;
+}
+.fullCard {
+    font-size: 1em;
+    text-align: center;
+}
+.fullCard > h5 {
+    font-size: 2.5em;
+}
+.fullCard > img {
+    width: 60vw;
+    height: auto;
+    /* max-height: 500px; */
 }
 .shop > img {
     width: 60vw;
-    margin: 50px 200px 50px 200px;
+    margin: 50px 200px;
 }
 .contact > img, .about > img {
     width: 100vw;
@@ -86,6 +106,19 @@ h4 {
     color: blue;
     text-align: center;
 }
+h5 {
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: bold;
+    margin: 25px 50px;
+    text-align: center;
+}
+h5 > a {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
 h6 {
     font-family: Lora, serif, calibri, sans-serif;
     font-style: italic;
@@ -112,10 +145,9 @@ form > input {
 textarea {
     width: 80%;
     height: 200px;
-    /* margin: 2px 5px; */
     margin: 5px 50px;
     padding: 5px;
-    border: 1px solid rgb(177, 177, 177,.5);
+    border: 1px solid rgb(177, 177, 177, .5);
 }
 
 .shop > p {
@@ -136,15 +168,16 @@ textarea {
     background: #ca2017;
 }
 .top-nav {
-    margin: 5px 10px 5px 50px;
+    margin: 5px 100px 5px 50px;
+    /* display: inline-block; */
 }    
 .top-nav > a {
     font-family: Apple Braille, -apple-system,  sans-serif;
     background-color: white;
     font-size: 1.2em;
-    padding: 9px 15px;
-    border: 0px; 
-    border: none;
+    padding: 11px 15px 9px 15px;
+    /* border: 0px;  */
+    /* border: none; */
     font-weight: 700;
     color: black;
     text-align: center;
@@ -153,14 +186,22 @@ textarea {
 }
 .top-nav > button:hover, .top-nav > a:hover, h4:hover {
     background: #ca2017;
+    opacity: 1;
     border-radius: 3px;
     color: gold;
     text-decoration: none;
 }
 .top-nav > button {
+    opacity: 0.5;
+    position: absolute;
+    position: fixed;
+    right: 15px;
+    top: 5px;
     background: white;
+    border-radius: 3px;
     font-size: 1.2em;
-    padding: 9px 15px;
+    /* border: none;   */
+    padding: 10px 15px 9px 15px;
     font-family: Apple Braille, -apple-system, sans-serif;
     font-weight: 700;
     color: black;
@@ -177,9 +218,6 @@ textarea {
 .videos {
     text-align: center;
 }
-.fb > img {
-    width: 150px;
-}
 .app-container {
     height: 100%;
     width: 100vw;
@@ -187,12 +225,14 @@ textarea {
     z-index: -1;
 }
 .app-container > button {
-    opacity: 0.7;
+    opacity: 0.5;
     position: absolute;
     position: fixed;
     left: 15px;
     top: 5px;
-    padding: 10px;
+    padding: 11px 10px 9px 10px;
+    border-radius: 3px;
+    font-size: 1.3em;
     /* margin: 10px; */
 }
 .app-container > button:hover {
@@ -221,7 +261,7 @@ p > a:hover {
     z-index: 1;
     height: 100%;
     width: 200px;
-    color: pink;
+    color: white;
     background-color: black;
     opacity: 0.9;
     display: flex;
@@ -258,10 +298,14 @@ p > a:hover {
 .overlay-closed {
     right: -100vw;
 }
+/* .card {
+    background-image: URL("https://images.pexels.com/photos/672636/pexels-photo-672636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+} */
 .card > img {
     border: 1px solid black;
-    width: 270px;
-    max-height: 400;
+    max-width: 270px;
+    width: 90%;
+    /* max-height: 400; */
     margin: 5px 5px;
 }
 .card > h3, .card > p {
@@ -274,19 +318,80 @@ p > a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+    /* background-image: URL("https://images.pexels.com/photos/672636/pexels-photo-672636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    background-image: URL("https://images.pexels.com/photos/1749/fire-orange-emergency-burning.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
-
+.fb-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.fb {
+    display: inline-block;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+.fb1 {
+    font-family: Arial;
+    margin: -20px 50px 30px 50px;
+    padding: 275px 8px 8px 65px;
+    color: white;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    text-decoration: none;
+    background-size: 100%;
+    background-image: url("https://scontent.fslc1-1.fna.fbcdn.net/v/t1.0-0/c33.0.200.200a/p200x200/56214439_2301241610132448_3864521567606145024_n.jpg?_nc_cat=108&_nc_ht=scontent.fslc1-1.fna&oh=d49759cb3fc5e4e6b0b6fa6c45660b51&oe=5D5BD30A");
+}
+.fb2 {
+    font-family: Arial;
+    margin: 0px 50px 50px 50px;
+    padding: 0px 0px 0px 95px;
+    color: black;
+    height: 166px;
+    width: 300px;
+    display: flex;
+    text-decoration: none;
+    background-size: 100%;
+    background-image: url("https://scontent.fslc1-1.fna.fbcdn.net/v/t1.0-9/54393329_2320206888233205_5512886898634260480_o.jpg?_nc_cat=108&_nc_ht=scontent.fslc1-1.fna&oh=351f77f9cae85f598696ea678bf6d2e2&oe=5D77DEEF");
+}
 @media only screen and (max-width: 1000px){
     .shop {
         grid-template-columns: 1fr 1fr;
+    }
+    h5 {
+        font-size: 1.5em;
     }
     h6 {
         margin: 20px 150px 0px 150px;
         line-height: 2.2em;
     }
+    .fb > p {
+        font-size: 14px;
+    }
+    .fb1 {
+        padding: 180px 8px 8px 25px;
+        height: 200px;
+        width: 200px;
+        text-decoration: none;
+    }
+    .fb2 {
+        padding: 3px 8px 8px 50px;
+        height: 111px;
+        width: 200px;
+        text-decoration: none;
+    }
 }
 
 @media only screen and (max-width: 666px){
+    * {
+        font-size: .95em;
+    }
     .shop {
         grid-template-columns: 1fr;
     }
@@ -297,7 +402,7 @@ p > a:hover {
     .top-nav {
         display: none;
     }
-    .top-nav > button {
+    .app-container > button, .top-nav > button {
         font-size: .8em;
         padding: 4px 7px;
     }

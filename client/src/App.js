@@ -10,6 +10,7 @@ import Music from "./components/Music"
 import Contact from "./components/Contact"
 import Performances from "./components/Performances"
 import Shop from "./components/Shop"
+import FullCard from "./components/FullCard"
 import FacebookTile from "./components/FacebookTile"
 // import OrderPage from "./components/xOrderPage"
 import Auth from "./auth/Auth"
@@ -27,7 +28,7 @@ const App = (props) => {
             <Header />
             <Switch>
                 <Route exact path="/" render={rProps => !token ? <Auth {...rProps}/> : <Redirect to="/home"/>} />
-                <Route 
+                <ProtectedRoute 
                     path="/home" 
                     token={token}
                     component={About}
@@ -52,18 +53,20 @@ const App = (props) => {
                     component={Contact}
                     redirectTo="/"
                 />
-                <ProtectedRoute 
+                {/* <ProtectedRoute 
                     path="/shop" 
                     token={token}
                     component={Shop}
                     redirectTo="/"
-                />
+                /> */}
+                <Route exact path="/shop" render={rProps => token ? <Shop /> : <Redirect to="/" />} />
                 <ProtectedRoute 
                     path="/performances" 
                     token={token}
                     component={Performances}
                     redirectTo="/"
                 />
+                <Route path="/shop/:_id" component={FullCard} />
             </Switch>
         <FacebookTile />
         </div>

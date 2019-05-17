@@ -6,6 +6,8 @@ const Videos = () => {
             <h1>YouTube Videos</h1>
             <iframe title="Fire Spinning at the Lantern Festival in SLC UT April 30th 2016" src="https://www.youtube.com/embed/RgIeUkHlbFU?list=UU7gmUsOauLbxnpUTP98ESZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe title="lite512K Stream 001" src="https://www.youtube.com/embed/d4TI60C6Jx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Clayton Allred spinning fire in Colorado Springs" src="https://www.youtube.com/embed/ywzu684wT2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Clayton Allred fire blessing for Kaminanda" src="https://www.youtube.com/embed/ihiCteYumFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     );
 }

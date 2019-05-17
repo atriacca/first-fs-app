@@ -20,7 +20,8 @@ class Menu extends Component {
             <div className="app-container">
                 <div 
                     onClick={this.navToggler}
-                    className={`overlay overlay-${this.state.navToggle ? "open" : "closed"}`}></div>
+                    className={`overlay overlay-${this.state.navToggle ? "open" : "closed"}`}>
+                </div>
                 <button onClick={this.navToggler}>|||</button>
                 <Navbar navToggler={this.navToggler} navToggle={this.state.navToggle}/>
             </div>

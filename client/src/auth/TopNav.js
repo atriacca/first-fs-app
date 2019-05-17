@@ -17,7 +17,7 @@ const Logout = props => {
                 <a href="/performances">FIRE SPINNING</a>
                 <a href="/videos">VIDEOS</a>
                 <a href="/music">MUSIC</a>
-                <a href="/shop">SHOP</a>
+                <a href="/shop">STORE</a>
                 <a href="/contact">CONTACT</a>
             </MediaQuery>
             <button onClick={logout}>LOGOUT</button>
