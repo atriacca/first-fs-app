@@ -5,7 +5,7 @@ const LoginForm = props => {
     const { handleChange, handleSubmit, inputs: { username, password }, btnText } = props
     return (
         <form onSubmit={handleSubmit} className="authForms">
-            <div>>
+            <>
                 <h3>Login</h3>
                 <input 
                     type="text" 
@@ -19,7 +19,7 @@ const LoginForm = props => {
                     value={ password }
                     onChange={handleChange} 
                     placeholder="Password"/>
-            </div>
+            </>
                 <button>{ btnText }</button>
         </form>
     )

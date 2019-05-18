@@ -10,7 +10,7 @@ import { withUser } from '../context/UserProvider'
 const Auth = (props) => {
     const { signup, login, authErr, token, logout } = props
     return (
-        <div>
+        <div className="auth">
             { token ? <Logout logout={logout}/> :
              <Toggle render={({on, toggler}) => 
              !on ?
@@ -21,7 +21,7 @@ const Auth = (props) => {
                         render={formProps => <AuthForm {...formProps} btnText="Login"/>}
                     />
                     <p style={{ color: "red" }}>{authErr}</p>
-                    <h4 onClick={toggler}>Go to new account page</h4>
+                    <button onClick={toggler}>Go to new account page</button>
                 </>
                 :
                 <>
@@ -31,7 +31,7 @@ const Auth = (props) => {
                         render={formProps => <AuthForm {...formProps} btnText="Sign Up"/>}
                     />
                     <p style={{ color: "red" }}>{authErr}</p>
-                    <h4 onClick={toggler}>Go to login page</h4>
+                    <button onClick={toggler}>Go to login page</button>
                 </>
             }/>
         }

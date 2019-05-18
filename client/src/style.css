@@ -206,15 +206,32 @@ textarea {
     font-weight: 700;
     color: black;
 }
-.authForms > button, h4:hover {
+.authForms > button, .auth > button {
     font-size: 1.2em;
     padding: 9px 15px;
     border-radius: 3px;
+    margin: -50px 0px 30px 0px;
     font-family: Apple Braille, -apple-system, sans-serif;
     font-weight: 700;
     color: gold;
     background: #ca2017;
+    /* background-image: url("https://images.pexels.com/photos/207353/pexels-photo-207353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
 }
+.auth {
+    text-align: center;
+    /* width: 20px; */
+}
+.authForms > button:hover , .auth > button:hover {
+    /* padding: 11px 10px 9px 10px; */
+    font-style: italic;
+    /* font-weight: 700; */
+    /* border-radius: 3px;    */
+}
+button:hover, a:hover {
+    font-style: italic;
+    cursor: pointer;
+}
+
 .videos {
     text-align: center;
 }
@@ -240,7 +257,6 @@ textarea {
     opacity: 1;
     color: gold;
 }
-
 .nav > a {
     /* color: #e29522; lighter flame */
     color: #e25822; /* flame */

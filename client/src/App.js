@@ -1,8 +1,7 @@
 import React from 'react'
-import { Route, Switch, Link, Redirect } from "react-router-dom"
+import { Route, Switch, Redirect } from "react-router-dom"
 import About from "./components/About"
 import Navbar from "./components/Navbar"
-// import Profile from './components/xProfile'
 import Header from "./components/Header"
 import Menu from "./components/Menu"
 import Videos from "./components/Videos"
@@ -12,7 +11,6 @@ import Performances from "./components/Performances"
 import Shop from "./components/Shop"
 import FullCard from "./components/FullCard"
 import FacebookTile from "./components/FacebookTile"
-// import OrderPage from "./components/xOrderPage"
 import Auth from "./auth/Auth"
 import { withUser } from './context/UserProvider'
 import ProtectedRoute from './shared/ProtectedRoute.js'

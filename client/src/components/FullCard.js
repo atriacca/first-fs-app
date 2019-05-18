@@ -28,12 +28,10 @@ class FullCard extends Component {
                 backgroundImage: "URL(https://images.pexels.com/photos/672636/pexels-photo-672636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
                 border: "solid black 3px",
                 color: "white",
-                // fontSize: "2em"
             }
             // border: "solid #CA2017 5px",
-            // width: "300px"
         }
-        console.log(this.props)
+
         return (
             <div style={styles.div} className="fullCard">
                 <h5>{title}</h5>
