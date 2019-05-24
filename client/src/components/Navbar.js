@@ -1,19 +1,20 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
 // import PropTypes from 'prop-types'
 
 const Navbar = (props) => {
-    // const { logout } = props
+    // const { token } = props
     return (
         <div 
         onClick={props.navToggler}
         className={`nav nav-${props.navToggle ? "open" : "closed"}`}>
-        <a href="/">Home</a>
+        <a href="/home">Home</a>
         <a href="/performances">Fire Spinning</a>
         <a href="/videos">Videos</a>
         <a href="/music">Music</a>
         <a href="/shop">Store</a>
         <a href="/contact">Contact</a>
+        {/* { !token && <a href="/signin">Login</a> } */}
+        <a href="/signin">Login</a>
     </div>
     )
 }

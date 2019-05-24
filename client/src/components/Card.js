@@ -6,7 +6,7 @@ const Card = (props) => {
     const styles = {
         div: {
             padding: "10px",
-            margin: "50px",
+            margin: "0px",
             // backgroundColor: "#e29522",
             // backgroundColor: "#e25822",
             // backgroundColor: "black",

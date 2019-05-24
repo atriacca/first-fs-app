@@ -1,7 +1,6 @@
 import React from 'react'
 import AuthForm from './AuthForm'
 import Logout from './TopNav'
-import About from "../components/About"
 import Form from '../shared/Form'
 import Toggle from '../shared/Toggle'
 // import PropTypes from 'prop-types'

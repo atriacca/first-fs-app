@@ -26,6 +26,8 @@ p > a {
 }
 .shop > a {
     text-decoration: none;
+    margin: 50px;
+    /* border: solid white 5px; */
 }
 /* 
 .shop > a:hover {
@@ -224,12 +226,12 @@ textarea {
 .authForms > button:hover , .auth > button:hover {
     /* padding: 11px 10px 9px 10px; */
     font-style: italic;
-    /* font-weight: 700; */
     /* border-radius: 3px;    */
 }
 button:hover, a:hover {
+    font-weight: bold;
     font-style: italic;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .videos {
@@ -330,6 +332,9 @@ p > a:hover {
     text-align: center;
     align-items: center;
 }
+/* .card > h3:hover, .card > p:hover {
+    font-weight: bold;
+} */
 .shop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -391,7 +396,7 @@ p > a:hover {
         font-size: 14px;
     }
     .fb1 {
-        padding: 180px 8px 8px 25px;
+        padding: 180px 8px 8px 10px;
         height: 200px;
         width: 200px;
         text-decoration: none;

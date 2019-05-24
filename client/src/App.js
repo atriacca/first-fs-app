@@ -22,52 +22,63 @@ const App = (props) => {
         <div>
             <Menu />
             <div>
-            { token && <Auth logout={logout}/> }
-            <Header />
-            <Switch>
-                <Route exact path="/" render={rProps => !token ? <Auth {...rProps}/> : <Redirect to="/home"/>} />
-                <ProtectedRoute 
-                    path="/home" 
-                    token={token}
-                    component={About}
-                    redirectTo="/"
-                />
-                {/* <Route path="/auth" component={Auth}/> */}
-                <ProtectedRoute 
-                    path="/videos" 
-                    token={token}
-                    component={Videos}
-                    redirectTo="/"
-                />
-                <ProtectedRoute 
-                    path="/music" 
-                    token={token}
-                    component={Music}
-                    redirectTo="/"
-                />
-                <ProtectedRoute 
-                    path="/contact" 
-                    token={token}
-                    component={Contact}
-                    redirectTo="/"
-                />
-                {/* <ProtectedRoute 
-                    path="/shop" 
-                    token={token}
-                    component={Shop}
-                    redirectTo="/"
-                /> */}
-                <Route exact path="/shop" render={rProps => token ? <Shop /> : <Redirect to="/" />} />
-                <ProtectedRoute 
-                    path="/performances" 
-                    token={token}
-                    component={Performances}
-                    redirectTo="/"
-                />
-                <Route path="/shop/:_id" component={FullCard} />
-            </Switch>
-        <FacebookTile />
-        </div>
+                { token && <Auth logout={logout}/> }
+                <Header />
+                <Switch>
+                    <Route exact path="/" render={rProps => !token ? <Auth {...rProps}/> : <Redirect to="/home"/>} />
+                    <Route 
+                        path="/home" 
+                        token={token}
+                        component={About}
+                        redirectTo="/"
+                    />
+                    <Route 
+                        path="/videos" 
+                        token={token}
+                        component={Videos}
+                        redirectTo="/"
+                    />
+                    <Route 
+                        path="/music" 
+                        token={token}
+                        component={Music}
+                        redirectTo="/"
+                    />
+                    <Route 
+                        path="/contact" 
+                        token={token}
+                        component={Contact}
+                        redirectTo="/"
+                    />
+                    {/* <ProtectedRoute 
+                        path="/shop" 
+                        token={token}
+                        component={Shop}
+                        redirectTo="/"
+                    /> */}
+                    {/* <Route exact path="/shop" render={rProps => token ? <Shop /> : <Redirect to="/" />} /> */}
+                    <Route 
+                        exact path="/shop"  
+                        token={token}
+                        component={Shop}
+                        redirectTo="/"
+                    />
+                    <Route 
+                        path="/performances" 
+                        token={token}
+                        component={Performances}
+                        redirectTo="/"
+                    />
+                    <Route path="/shop/:_id" component={FullCard} />
+                    <Route 
+                        path="/signin" 
+                        token={token}
+                        component={Auth}
+                        redirectTo="/"
+                    />
+                </Switch>
+                <FacebookTile />
+            </div>
         </div>
     )
 }
