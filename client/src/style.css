@@ -5,14 +5,13 @@
     width: auto;
     font-family: Palatino, calibri, sans-serif;
     font-size: 14px;
-    font-weight: lighter;
-    /* background-image: url("https://images.pexels.com/photos/672636/pexels-photo-672636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
-    ;
+    font-weight: normal;
+    /* background-image: url("https://images.pexels.com/photos/672636/pexels-photo-672636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); 
+    */
     /* text-align: center; 
     https://images.pexels.com/photos/1749/fire-orange-emergency-burning.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
     https://images.pexels.com/photos/216634/pexels-photo-216634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
     https://images.pexels.com/photos/216635/pexels-photo-216635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-    
     */
 }
 p {
@@ -27,22 +26,6 @@ p > a {
 .shop > a {
     text-decoration: none;
     margin: 50px;
-    /* border: solid white 5px; */
-}
-/* 
-.shop > a:hover {
-    color: #CA2017;
-    text-decoration: underline;
-} */
-Form > button {
-    background-color: #CA2017;
-    margin: 5px 50px;
-    font-size: 1.2em;
-    padding: 9px 15px;
-    border-radius: 3px;
-    font-family: Apple Braille, -apple-system, sans-serif;
-    font-weight: 700;
-    color: gold;
 }
 .navbar > a {
     margin: 2px 5px;
@@ -69,7 +52,6 @@ img {
 .fullCard > img {
     width: 60vw;
     height: auto;
-    /* max-height: 500px; */
 }
 .shop > img {
     width: 60vw;
@@ -101,6 +83,10 @@ h3 {
     font-size: 1.5em;
     margin: 25px 50px;
 }
+.card :hover {
+    font-weight: bold;
+    transition: opacity 200ms linear 200ms;
+}
 h4 {
     font-size: 1.2em;
     margin: -15px 0px 90px 0px;
@@ -113,8 +99,8 @@ h5 {
     line-height: 1.5;
     font-style: italic;
     font-weight: bold;
-    margin: 25px 50px;
     text-align: center;
+    margin: 25px 50px;
 }
 h5 > a {
     font-size: 1em;
@@ -151,7 +137,6 @@ textarea {
     padding: 5px;
     border: 1px solid rgb(177, 177, 177, .5);
 }
-
 .shop > p {
     margin: 10px 200px 0px 200px;
     text-align: center;
@@ -159,13 +144,13 @@ textarea {
 .sep {
     border-bottom: 0.5px solid rgb(139, 139, 139, 0.6);
 }
-.sep > button {
-    font-size: 1.2em;
+.sep > button, form > button {
     margin: 10px;
     padding: 9px 15px;
     border-radius: 3px;
     font-family: Apple Braille, -apple-system, sans-serif;
-    font-weight: 700;
+    font-size: 1.2em;
+    font-weight: bold;
     color: gold;
     background: #ca2017;
 }
@@ -178,9 +163,7 @@ textarea {
     background-color: white;
     font-size: 1.2em;
     padding: 11px 15px 9px 15px;
-    /* border: 0px;  */
-    /* border: none; */
-    font-weight: 700;
+    font-weight: bold;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -192,6 +175,7 @@ textarea {
     border-radius: 3px;
     color: gold;
     text-decoration: none;
+    transition: all 200ms linear 200ms;
 }
 .top-nav > button {
     opacity: 0.5;
@@ -205,8 +189,9 @@ textarea {
     /* border: none;   */
     padding: 10px 15px 9px 15px;
     font-family: Apple Braille, -apple-system, sans-serif;
-    font-weight: 700;
+    font-weight: bold;
     color: black;
+    transition: all 200ms linear 200ms;
 }
 .authForms > button, .auth > button {
     font-size: 1.2em;
@@ -214,9 +199,10 @@ textarea {
     border-radius: 3px;
     margin: -50px 0px 30px 0px;
     font-family: Apple Braille, -apple-system, sans-serif;
-    font-weight: 700;
+    font-weight: bold;
     color: gold;
     background: #ca2017;
+    transition: all 200ms linear 200ms;
     /* background-image: url("https://images.pexels.com/photos/207353/pexels-photo-207353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
 }
 .auth {
@@ -224,16 +210,14 @@ textarea {
     /* width: 20px; */
 }
 .authForms > button:hover , .auth > button:hover {
-    /* padding: 11px 10px 9px 10px; */
     font-style: italic;
-    /* border-radius: 3px;    */
-}
-button:hover, a:hover {
     font-weight: bold;
-    font-style: italic;
-    /* cursor: pointer; */
+    transition: all 200ms linear 200ms;
 }
-
+/* button:hover, a:hover {
+    font-style: italic;
+    font-weight: bold;
+} */
 .videos {
     text-align: center;
 }
@@ -242,6 +226,7 @@ button:hover, a:hover {
     width: 100vw;
     background-color: violet;
     z-index: -1;
+    transition: all 200ms linear 200ms;
 }
 .app-container > button {
     opacity: 0.5;
@@ -252,6 +237,7 @@ button:hover, a:hover {
     padding: 11px 10px 9px 10px;
     border-radius: 3px;
     font-size: 1.3em;
+    transition: all 200ms linear 200ms;
     /* margin: 10px; */
 }
 .app-container > button:hover {
@@ -266,13 +252,13 @@ button:hover, a:hover {
     text-decoration: none;
 }
 .nav > a:hover {
-    font-style: italic;
     font-size: 2.2em;
-    font-weight: 600;
+    font-style: italic;
+    font-weight: bold;
 }
 p > a:hover {
     font-style: italic;
-    font-weight: 600;
+    font-weight: bold;
     color: #CA2017;
 }
 .nav {
@@ -323,7 +309,6 @@ p > a:hover {
     border: 1px solid black;
     max-width: 270px;
     width: 90%;
-    /* max-height: 400; */
     margin: 5px 5px;
 }
 .card > h3, .card > p {
@@ -332,9 +317,6 @@ p > a:hover {
     text-align: center;
     align-items: center;
 }
-/* .card > h3:hover, .card > p:hover {
-    font-weight: bold;
-} */
 .shop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -342,20 +324,9 @@ p > a:hover {
     /* background-image: URL("https://images.pexels.com/photos/672636/pexels-photo-672636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
     background-image: URL("https://images.pexels.com/photos/1749/fire-orange-emergency-burning.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
-.fb-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: auto;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-.fb {
-    display: inline-block;
-    flex: 1 1 auto;
-    flex-direction: column;
+.fb-wrapper > img {
+    height: 500px;
+    width: 500px;
 }
 .fb1 {
     font-family: Arial;
@@ -407,6 +378,11 @@ p > a:hover {
         width: 200px;
         text-decoration: none;
     }
+    .fb-wrapper > img {
+        /* float: right; */
+        height: 300px;
+        width: 300px;
+    }
 }
 
 @media only screen and (max-width: 666px){
@@ -429,5 +405,21 @@ p > a:hover {
     }
     .contact > input, .shop > input, .performances > input {
         width: 50%;
+    }
+    .fb1 {
+        padding: 144px 2px 8px 2px;
+        height: 160px;
+        width: 160px;
+        text-decoration: none;
+    }
+    .fb2 {
+        padding: 3px 8px 8px 30px;
+        height: 83px;
+        width: 160px;
+        text-decoration: none;
+    }
+    .fb-wrapper > img {
+        height: 200px;
+        width: 200px;
     }
 }

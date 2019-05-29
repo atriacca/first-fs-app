@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch, Redirect } from "react-router-dom"
 import About from "./components/About"
-import Navbar from "./components/Navbar"
+import Gallery from "./components/Gallery"
 import Header from "./components/Header"
 import Menu from "./components/Menu"
 import Videos from "./components/Videos"
@@ -48,6 +48,12 @@ const App = (props) => {
                         path="/contact" 
                         token={token}
                         component={Contact}
+                        redirectTo="/"
+                    />
+                    <Route 
+                        path="/gallery" 
+                        token={token}
+                        component={Gallery}
                         redirectTo="/"
                     />
                     {/* <ProtectedRoute 

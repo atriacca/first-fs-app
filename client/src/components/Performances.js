@@ -4,9 +4,10 @@ const Performances = (props) => {
     const { handleChange, handleSubmit, fullName, email, phone, website, comment } = props
     return (
         <div>
-            <h1>Fire Spinning Performances</h1>
+            <h1>Fire Spinning Performances and Lessons</h1>
             <img src="https://allredfiretribe.files.wordpress.com/2018/08/13423812_1741681022755179_4112663154152107891_n.jpg" alt="Unable to render"/>
-            <p>Please contact us for more information on rates and booking fire spinning performances for private parties and events.</p>
+            <p>Clayton Allred will be conducting Contact Fire Staff group lessons at 5:00-6:30pm every Monday and Thursday until August 19, 2019. Click <a href="https://www.facebook.com/pg/Ripple-Effect-SLC-2320185781568649/events/?ref=page_internal" target='_blank' rel="noopener noreferrer">here</a> for details.</p>
+            <p>Please use the form below to contact us for more information on rates and booking fire spinning performances for private parties and events.</p>
             <form onSubmit={handleSubmit} className="performances">
             {/* <div> */}
                 {/* <h3>Please provide your contact info and description of your needs with prospective dates if possible.</h3> */}

@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 import product from "./product"
 
 class FullCard extends Component {
@@ -17,7 +19,7 @@ class FullCard extends Component {
 
         let {_id} = this.props.match.params
         const product1 = product.find(item => item._id === _id)
-        let {title, price, description, imgUrl} = product1
+        let {title, price, description, imgUrl, images} = product1
     
         const styles = {
             div: {
@@ -28,6 +30,7 @@ class FullCard extends Component {
                 backgroundImage: "URL(https://images.pexels.com/photos/672636/pexels-photo-672636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
                 border: "solid black 3px",
                 color: "white",
+                // autoPlay: true,
             }
             // border: "solid #CA2017 5px",
         }
@@ -37,7 +40,8 @@ class FullCard extends Component {
                 <h5>{title}</h5>
                 <p>{price.toLocaleString("en-US", { style: "currency", currency: "USD" })}</p>
                 <p>{description}</p>
-                <img src={imgUrl} alt="Unable to render"/>
+                {/* <img src={imgUrl} alt="Unable to render"/> */}
+                <ImageGallery height='100vh' autoPlay='true' items={images} />
             </div>
         )
     }
