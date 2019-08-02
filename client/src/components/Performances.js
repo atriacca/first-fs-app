@@ -7,11 +7,12 @@ const Performances = (props) => {
             <h1>Fire Spinning Performances and Lessons</h1>
             <img src="https://allredfiretribe.files.wordpress.com/2018/08/13423812_1741681022755179_4112663154152107891_n.jpg" alt="Unable to render"/>
             <p>Clayton Allred will be conducting Contact Fire Staff group lessons at 5:00-6:30pm every Monday and Thursday until August 19, 2019. Click <a href="https://www.facebook.com/pg/Ripple-Effect-SLC-2320185781568649/events/?ref=page_internal" target='_blank' rel="noopener noreferrer">here</a> for details.</p>
-            <p>Please use the form below to contact us for more information on rates and booking fire spinning performances for private parties and events.</p>
-            <form onSubmit={handleSubmit} className="performances">
+            <p>You may call Clayton at 801-899-FIRE for more information on booking fire spinning performances for private parties or events, to sign up for any lessons, to order any products or with any questions on any of the above. Namaste.</p>
+            {/* <p>Please use the form below to contact us for more information on rates and booking fire spinning performances for private parties and events.</p> */}
+            {/* <form onSubmit={handleSubmit} className="performances"> */}
             {/* <div> */}
                 {/* <h3>Please provide your contact info and description of your needs with prospective dates if possible.</h3> */}
-                <input 
+                {/* <input 
                     type="text" 
                     name="fullName" 
                     value={ fullName }
@@ -44,12 +45,12 @@ const Performances = (props) => {
                     value={ comment }
                     onChange={handleChange} 
                     placeholder="Comments (required)"
-                    />
+                    /> */}
         {/* </div> */}
-                <button>Submit</button>
-            </form>
+                {/* <button>Submit</button>
+            </form> */}
         </div>
-    );
+    )
 }
 
 export default Performances

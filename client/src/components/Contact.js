@@ -1,12 +1,13 @@
 import React from 'react'
 
 const Contact = (props) => {
-    const { handleChange, handleSubmit, fullName, email, phone, website, comment } = props
+    // const { handleChange, handleSubmit, fullName, email, phone, website, comment } = props
     return (
         <div>
-            <img src="https://allredfiretribe.files.wordpress.com/2018/08/13445533_1741681716088443_7149686734532124140_n.jpg?w=960" alt="Unable to render"/>
             <h1>Contact</h1>
-            <form onSubmit={handleSubmit} className="contact">
+            <img src="https://allredfiretribe.files.wordpress.com/2018/08/13445533_1741681716088443_7149686734532124140_n.jpg?w=960" alt="Unable to render"/>
+            <p>You may call Clayton at 801-899-FIRE for more information on booking fire spinning performances for private parties or events, to sign up for any lessons, to order any products or with any questions on any of the above. Namaste.</p>
+            {/* <form onSubmit={handleSubmit} className="contact">
                 <input 
                     type="text" 
                     name="fullName" 
@@ -41,9 +42,9 @@ const Contact = (props) => {
                     placeholder="Comments (required)"
                     />
                 <button>Submit</button>
-            </form>
+            </form> */}
             </div>
-    );
+    )
 }
 
 export default Contact

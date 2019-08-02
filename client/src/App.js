@@ -13,7 +13,7 @@ import FullCard from "./components/FullCard"
 import FacebookTile from "./components/FacebookTile"
 import Auth from "./auth/Auth"
 import { withUser } from './context/UserProvider'
-import ProtectedRoute from './shared/ProtectedRoute.js'
+// import ProtectedRoute from './shared/ProtectedRoute.js'
 // import PropTypes from 'prop-types'
 
 const App = (props) => {

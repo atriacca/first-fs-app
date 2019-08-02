@@ -12,23 +12,26 @@ const AuthForm = props => {
         textAlign: "center"
     }
     return (
-        <div style={styles}>
-            <form onSubmit={handleSubmit}>
-            <input 
-                type="text" 
-                name="username" 
-                value={ username }
-                onChange={handleChange} 
-                placeholder="Username"/>
-            <input 
-                type="text" 
-                name="password" 
-                value={ password }
-                onChange={handleChange} 
-                placeholder="Password"/>
-            <button>{ btnText }</button>
-        </form>
+        <div>
+            <h3>You need not create an account or login to access any parts of this site.</h3>
+            <div style={styles}>
+                <form onSubmit={handleSubmit}>
+                    <input 
+                        type="text" 
+                        name="username" 
+                        value={ username }
+                        onChange={handleChange} 
+                        placeholder="Username"/>
+                    <input 
+                        type="text" 
+                        name="password" 
+                        value={ password }
+                        onChange={handleChange} 
+                        placeholder="Password"/>
+                    <button>{ btnText }</button>
+                </form>
             </div>
+        </div>
     )
 }
 

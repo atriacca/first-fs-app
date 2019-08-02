@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 
-const TopNav = props => {
-    const { logout, token } = props
+const Logout = props => {
+    const { logout } = props
     const styles = {
         display: 'flex',
         flex: "1 1 0",
@@ -20,14 +20,15 @@ const TopNav = props => {
                 <a href="/shop">STORE</a>
                 <a href="/contact">CONTACT</a>
             </MediaQuery>
-            { token && <button onClick={logout}>LOGOUT</button> }
+            {/* { token && <Auth logout={logout}/> } */}
 
+            <button onClick={logout}>LOGOUT</button>
         </div>
     )
 }
 
-TopNav.propTypes = {
+Logout.propTypes = {
     username: PropTypes.string
 }
 
-export default TopNav
+export default Logout

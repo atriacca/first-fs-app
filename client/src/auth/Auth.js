@@ -1,6 +1,7 @@
 import React from 'react'
 import AuthForm from './AuthForm'
-import Logout from './TopNav'
+import Logout from './Logout'
+// import TopNav from './TopNav'
 import Form from '../shared/Form'
 import Toggle from '../shared/Toggle'
 // import PropTypes from 'prop-types'
@@ -10,6 +11,7 @@ const Auth = (props) => {
     const { signup, login, authErr, token, logout } = props
     return (
         <div className="auth">
+            {/* { token ? <TopNav logout={logout}/> : */}
             { token ? <Logout logout={logout}/> :
              <Toggle render={({on, toggler}) => 
              !on ?

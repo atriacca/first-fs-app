@@ -31,9 +31,10 @@ const Shop = (props) => {
             <img src="https://allredfiretribe.files.wordpress.com/2018/12/47493516_10218053891365125_1887589065180577792_n.jpg" alt="Unable to render"/>
             <h6>THE IGNITE AND UNITE DESIGN WAS CREATED BY RENEE SARASVATI & CLAYTON ALLRED... IT IS A SEED OF LIFE, WITH A FIRE MANDALA, AND THE I-CHING... THIS IS ABOUT DIVINE AWARENESS AND TRANSFORMATION. IGNITE THE FLAME IN YOUR HEART AND UNITE WITH OTHERS TO HELP WALK WITH HUMANITY INTO A LOVE VIBRATION.</h6>
             {/* <p>Please click <a href="https://www.facebook.com/1497506177212073/videos/1871636973132323/" target='_blank' rel="noopener noreferrer">here</a> to view a video on what goes into making one of my staffs.</p> */}
-            <p>Clayton Allred will be conducting Contact Fire Staff group lessons at 5:00-6:30pm every Monday and Thursday until August 19, 2019. Click <a href="https://www.facebook.com/pg/Ripple-Effect-SLC-2320185781568649/events/?ref=page_internal" target='_blank' rel="noopener noreferrer">here</a> for details.</p>
-            <p>* Please use the form below to send a message if you would like to place an order. Clothing may take 2 - 3 weeks depending on inventory. Each Fire Staff and Nunchaku is made to order and can take up to four weeks.</p>
-            <form onSubmit={handleSubmit}>
+            <p>You may call Clayton at 801-899-FIRE for more information on booking fire spinning performances for private parties or events, to sign up for any lessons, to order any products or with any questions on any of the above. Namaste.</p>
+            {/* <p>* Please use the form below to send a message if you would like to place an order.</p> */}
+            <p>Clothing may take 2 - 3 weeks depending on inventory. Each Fire Staff and Nunchaku is made to order and can take up to four weeks.</p>
+            {/* <form onSubmit={handleSubmit}>
                 <input 
                     type="text" 
                     name="fullName" 
@@ -69,7 +70,7 @@ const Shop = (props) => {
                     placeholder="Comments (required)"
                     />
                 <button>Submit</button>
-            </form>
+            </form> */}
         </div>
     )
 }
