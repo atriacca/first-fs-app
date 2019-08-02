@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import product from "./product"
+import product from "../src/components/product"
 import ImageGallery from 'react-image-gallery'
 
 class Gallery extends Component {

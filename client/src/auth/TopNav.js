@@ -8,7 +8,7 @@ const Logout = props => {
         display: 'flex',
         flex: "1 1 0",
         flexDirection: 'row',
-        justifyContent: 'space-around',
+        justifyContent: 'space-around'
     }
     return (
         <div className="top-nav" style={styles}>

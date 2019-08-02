@@ -5,15 +5,21 @@ const morgan = require("morgan")
 const mongoose = require('mongoose')
 const expressJwt = require('express-jwt') // Gatekeeper/Security checkpoint
 const PORT = process.env.PORT || 7000
+const path = require("path")
+
 
 // Global middleware
 app.use(express.json())
 app.use(morgan('dev'))
-app.use("./api", expressJwt({ secret: process.env.SECRET })) // provides req.user
+app.use("./api", expressJwt({ secret: process.env.SECRET })) 
+app.use(express.static(path.join(__dirname, "client", "build")))
+// provides req.user
 
 // DB connect
-mongoose.connect(
-    "mongodb://localhost:27017/first-fs-app",
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/first-fs-app",
+// )
+// mongoose.connect(
+//     "mongodb://localhost:27017/first-fs-app",
     {
         useNewUrlParser: true,
         useFindAndModify: true,
@@ -38,6 +44,10 @@ app.use((err, req, res, next) => {
         res.status(err.status)
     }
     return res.status(500).send({errMsg: err.message})
+})
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"))
 })
 
 // Server

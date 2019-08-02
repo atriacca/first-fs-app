@@ -35,6 +35,7 @@ p > a {
 }
 img {
     height: auto;
+    max-height: 90vh;
     width: 100vw;
     /* max-width: 90vw; */
     align-content: center;

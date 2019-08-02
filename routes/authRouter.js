@@ -16,8 +16,9 @@ authRouter.post("/signup", (req, res, next) => {
         }
         // Does that user already exists/username is taken
         if(user !== null){
+        // if(user){   // Same as (user !== null) but less code
             res.status(400)
-            return next(new Error("Sorry, but that username is already taken."))
+            return next(new Error("Oops, that username is already taken."))
         }
         // Create user
         const newUser = new User(req.body)
@@ -39,20 +40,23 @@ authRouter.post("/signup", (req, res, next) => {
     // Create token
     // Send user object and token to front-end
 authRouter.post("/login", (req, res, next) => {
-    User.findOne({username: req.body.username.toLowerCase()}, (err, user) => {
+    User.findOne({username: req.body.username.toLowerCase()}, (err, user) => { // Note: "toLowerCase" isn't necessary if Schema has "lowercase: true"
         if(err){
-            res.status(500)
+            res.status(403)
             return next (err)
         }
         // Does the user exist 
         if(!user){
-            res.status(500)
+            res.status(401)
             return next(new Error("The Username and/or Password are incorrect"))
         }
+        // Or combine the UN and PW checking by using:
+        // if(!user || user.password !== req.body.password){
+
         // Does the user's password attempt match the encrypted password in the DB
         user.checkPassword(req.body.password, (err, isMatch) => {
             if(err) {
-                res.status(401)
+                res.status(403)
                 return next(err)
             }
             // Did the user's password match
