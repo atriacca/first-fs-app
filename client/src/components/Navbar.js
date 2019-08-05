@@ -1,8 +1,10 @@
 import React from 'react'
+import { withUser } from "../context/UserProvider.js"
 // import PropTypes from 'prop-types'
 
-const Navbar = (props) => {
+const Navbar = props => {
     const { token } = props
+    console.log(props)
     return (
         <div 
         onClick={props.navToggler}
@@ -14,8 +16,8 @@ const Navbar = (props) => {
         <a href="/shop">Store</a>
         <a href="/contact">Contact</a>
         {/* <a href="/gallery">Gallery</a> */}
-        {/* { !token && <a href="/signin">Login</a> } */}
-        <a href="/signin">Login</a>
+        { !token && <a href="/signin">Login</a> }
+        {/* <a href="/signin">Login</a> */}
     </div>
     )
 }
@@ -26,7 +28,7 @@ const Navbar = (props) => {
 //     logout:     PropTypes.func
 // }
 
-export default Navbar
+export default withUser(Navbar)
 /*
         <div className="navbar">
             <Link to="/orders">Order Page</Link>

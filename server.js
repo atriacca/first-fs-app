@@ -23,19 +23,17 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/first-fs-
     {
         useNewUrlParser: true,
         useFindAndModify: true,
-        useCreateIndex: true
+        useCreateIndex: false
     },
-    () => console.log("connected to the DB")
+    () => console.log("Connected to the DB")
 )
 
 // Routes
 app.use("/auth", require('./routes/authRouter.js'))
-
 // Creates a 'security-gate' for any request going to /api/anything else
 // Decode given token, and create a req.user
 app.use("/api", expressJwt({secret: process.env.SECRET})) // req.user._id
 app.use("/api/orders", require('./routes/orderRouter.js'))
-
 
 // Error Handler
 app.use((err, req, res, next) => {

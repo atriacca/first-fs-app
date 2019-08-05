@@ -25,7 +25,7 @@ const App = props => {
             <TopNav />
             <div>
                 {/* USE THE NEXT LINE WHEN USING AUTH */}
-                { token && <Auth logout={logout}/> }
+                { token && <Auth logout={logout} /> }
                 <Header />
                 <Switch>
                     {/* <Route exact path="/" render={rProps => !token ? <Auth {...rProps}/> : <Redirect to="/home"/>} /> */}

@@ -18,7 +18,7 @@ authRouter.post("/signup", (req, res, next) => {
         if(user !== null){
         // if(user){   // Same as (user !== null) but less code
             res.status(400)
-            return next(new Error("Oops, that username is already taken."))
+            return next(new Error("Oops, that username is already taken. Please try another."))
         }
         // Create user
         const newUser = new User(req.body)
@@ -48,7 +48,7 @@ authRouter.post("/login", (req, res, next) => {
         // Does the user exist 
         if(!user){
             res.status(401)
-            return next(new Error(`The Username and/or Password are incorrect, but don't worry cuz they aren't currently required to access stuff on this site. Just click on the "hamburger menu" in the top left corner to navigate anywhere you wish.`))
+            return next(new Error(`The Username and/or Password are incorrect, but don't worry cuz they aren't currently required to access stuff on this site.`))
         }
         // Or combine the UN and PW checking by using:
         // if(!user || user.password !== req.body.password){
@@ -62,7 +62,7 @@ authRouter.post("/login", (req, res, next) => {
             // Did the user's password match
             if(!isMatch){
                 res.status(401)
-                return next(new Error(`The Username and/or Password are incorrect, but don't worry cuz they aren't currently required to access stuff on this site. Just click on the "hamburger menu" in the top left corner to navigate anywhere you wish.`))
+                return next(new Error(`The Username and/or Password are incorrect, but don't worry cuz they aren't currently required to access stuff on this site.`))
             }
             // Create token and send token/user object to front-end
             const token = jwt.sign(user.withoutPassword(), process.env.SECRET)

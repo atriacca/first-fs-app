@@ -34,7 +34,8 @@ const userSchema = new Schema({
         default: Date.now
     }
 })
-                            // Model Name    // Model Blueprint
+// Password encryption on sign up
+            // Model Name    // Model Blueprint
 userSchema.pre("save", function (next) {
     const user = this
     if (!user.isModified("password")) return next() // telling bcrypt to hash if hasn't already
@@ -45,6 +46,7 @@ userSchema.pre("save", function (next) {
     })
 })
 
+// Checks encrypted password on login
 userSchema.methods.checkPassword = function (passwordAttempt, callback) {
     bcrypt.compare(passwordAttempt, this.password, (err, isMatch) => {
         if (err) return callback(err)
@@ -52,6 +54,7 @@ userSchema.methods.checkPassword = function (passwordAttempt, callback) {
     })
 }
 
+// Removes password from user object before sending it to the frontend
 userSchema.methods.withoutPassword = function () {
     const user = this.toObject()
     delete user.password

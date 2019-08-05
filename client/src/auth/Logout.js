@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
-// import Auth from './Auth.js'
+import Auth from './Auth.js'
 
 const Logout = props => {
     const { logout, token } = props
@@ -21,7 +21,7 @@ const Logout = props => {
                 <a href="/shop">STORE</a>
                 <a href="/contact">CONTACT</a>
             </MediaQuery> */}
-            {/* { token && <Auth logout={logout}/> } */}
+            { token && <Auth logout={logout}/> }
 
             <button onClick={logout}>LOGOUT</button>
         </div>
