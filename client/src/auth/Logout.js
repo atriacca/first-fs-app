@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
-import Auth from './Auth.js'
+// import Auth from './Auth.js'
 
 const Logout = props => {
     const { logout, token } = props
@@ -13,14 +13,14 @@ const Logout = props => {
     }
     return (
         <div className="top-nav" style={styles}>
-            <MediaQuery query="(min-width: 800px)">
+            {/* <MediaQuery query="(min-width: 800px)">
                 <a href="/">HOME</a>
                 <a href="/performances">FIRE SPINNING</a>
                 <a href="/videos">VIDEOS</a>
                 <a href="/music">MUSIC</a>
                 <a href="/shop">STORE</a>
                 <a href="/contact">CONTACT</a>
-            </MediaQuery>
+            </MediaQuery> */}
             {/* { token && <Auth logout={logout}/> } */}
 
             <button onClick={logout}>LOGOUT</button>

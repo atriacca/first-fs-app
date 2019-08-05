@@ -1,7 +1,7 @@
 import React from 'react'
 import AuthForm from './AuthForm.js'
 import Logout from './Logout.js'
-import TopNav from './TopNav.js'
+// import TopNav from './TopNav.js'
 import Form from '../shared/Form.js'
 import Toggle from '../shared/Toggle.js'
 // import PropTypes from 'prop-types'

@@ -2,7 +2,7 @@ import React from 'react'
 // import PropTypes from 'prop-types'
 
 const Navbar = (props) => {
-    // const { token } = props
+    const { token } = props
     return (
         <div 
         onClick={props.navToggler}
