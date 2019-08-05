@@ -4,6 +4,7 @@ import About from "./components/About.js"
 import Gallery from "./components/Gallery.js"
 import Header from "./components/Header.js"
 import Menu from "./components/Menu.js"
+import TopNav from "./auth/TopNav.js"
 import Videos from "./components/Videos.js"
 import Music from "./components/Music.js"
 import Contact from "./components/Contact.js"
@@ -21,12 +22,16 @@ const App = props => {
     return (
         <div>
             <Menu />
+            <TopNav />
             <div>
-                { token && <Auth logout={logout}/> }
+                {/* { token && <Auth logout={logout}/> } */}
                 <Header />
                 <Switch>
                     {/* <Route exact path="/" render={rProps => !token ? <Auth {...rProps}/> : <Redirect to="/home"/>} /> */}
-                    <Route exact path="/" token={token}
+                    {/* <Route exact path="/" render={rProps => !token ? <TopNav logout={logout}/> : <Redirect to="/home"/>} /> */}
+                    <Route 
+                        exact path="/" 
+                        token={token}
                         component={About}
                         redirectTo="/" />
                     <Route 
