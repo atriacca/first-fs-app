@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
+import Auth from './Auth.js'
 
 const Logout = props => {
-    const { logout } = props
+    const { logout, token } = props
     const styles = {
         display: 'flex',
         flex: "1 1 0",

@@ -18,7 +18,7 @@ const Shop = (props) => {
       
     return (
         <div>
-            <h1>Products</h1>
+            <h1>Store</h1>
             <div className="shop">
                 {productComponents}
             </div>

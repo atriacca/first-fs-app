@@ -13,7 +13,7 @@ const TopNav = props => {
     return (
         <div className="top-nav" style={styles}>
             <MediaQuery query="(min-width: 800px)">
-                <a href="/">HOME</a>
+                <a href="/home">HOME</a>
                 <a href="/performances">FIRE SPINNING</a>
                 <a href="/videos">VIDEOS</a>
                 <a href="/music">MUSIC</a>

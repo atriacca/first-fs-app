@@ -13,9 +13,9 @@ const Navbar = (props) => {
         <a href="/music">Music</a>
         <a href="/shop">Store</a>
         <a href="/contact">Contact</a>
-        <a href="/gallery">Gallery</a>
+        {/* <a href="/gallery">Gallery</a> */}
         {/* { !token && <a href="/signin">Login</a> } */}
-        {/* <a href="/signin">Login</a> */}
+        <a href="/signin">Login</a>
     </div>
     )
 }
