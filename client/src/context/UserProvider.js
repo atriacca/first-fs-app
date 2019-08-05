@@ -5,7 +5,7 @@ const UserContext = React.createContext()
 const orderAxios = axios.create()
 
 // Adds the JSON web token a the Authorization header on all outgoing requests when using 'orderAxios'
-orderAxios.interceptors.request.use((config) => {
+orderAxios.interceptors.request.use(config => {
     const token = localStorage.getItem("token")
     config.headers.Authorization = `Bearer ${token}`
     return config
@@ -22,7 +22,7 @@ class UserProvider extends Component {
         }
     }
 
-    signup = (credentials) => {
+    signup = credentials => {
         axios.post("/auth/signup", credentials)
             .then(res => {
                 const { user, token } = res.data
@@ -36,7 +36,7 @@ class UserProvider extends Component {
             .catch(err => this.handleAuthErr(err))
     }
 
-    login = (credentials) => {
+    login = credentials => {
         axios.post("/auth/login", credentials)
             .then(res => {
                 const { user, token } = res.data
@@ -60,7 +60,7 @@ class UserProvider extends Component {
         })
     }
 
-    handleAuthErr = (err) => {
+    handleAuthErr = err => {
         this.setState({
             authErr: err.response.data.errMsg
         })
@@ -78,7 +78,7 @@ class UserProvider extends Component {
         .catch(err => console.log(err.response.data.errMsg))
     }
     
-    addOrder = (newOrder) => {
+    addOrder = newOrder => {
         orderAxios.post("/api/orders", newOrder)
             .then(res => {
                 this.setState(prevState => ({
@@ -107,8 +107,8 @@ class UserProvider extends Component {
 
 export default UserProvider
 
-export const withUser = (C) => (props) => (
+export const withUser = C => props => (
     <UserContext.Consumer>
-        { (value) =>  <C {...value} {...props}/> }
+        { value =>  <C {...value} {...props}/> }
     </UserContext.Consumer>
 )

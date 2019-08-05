@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contact = (props) => {
+const Contact = props => {
     // const { handleChange, handleSubmit, fullName, email, phone, website, comment } = props
     return (
         <div>

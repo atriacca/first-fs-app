@@ -1,13 +1,13 @@
 import React from 'react'
-import AuthForm from './AuthForm'
-import Logout from './Logout'
-// import TopNav from './TopNav'
-import Form from '../shared/Form'
-import Toggle from '../shared/Toggle'
+import AuthForm from './AuthForm.js'
+import Logout from './Logout.js'
+// import TopNav from './TopNav.js'
+import Form from '../shared/Form.js'
+import Toggle from '../shared/Toggle.js'
 // import PropTypes from 'prop-types'
-import { withUser } from '../context/UserProvider'
+import { withUser } from '../context/UserProvider.js'
 
-const Auth = (props) => {
+const Auth = props => {
     const { signup, login, authErr, token, logout } = props
     return (
         <div className="auth">

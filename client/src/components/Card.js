@@ -1,8 +1,8 @@
 import React from "react"
-import product from "./product"
-// import FullCard from "./FullCard"
+import product from "./product.js"
+// import FullCard from "./FullCard.js"
 
-const Card = (props) => {
+const Card = props => {
     const styles = {
         div: {
             padding: "10px",

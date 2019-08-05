@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar'
+import Navbar from './Navbar.js'
 
 class Menu extends Component {
     constructor(){
