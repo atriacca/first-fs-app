@@ -21,7 +21,7 @@ const FacebookTile = () => {
                     <h2>Ripple Effect SLC</h2></a>
             </div>
             </div>
-                <img src="https://allredfiretribe.files.wordpress.com/2018/08/back.jpg?" alt="not rendered"/>
+                <img className="andSoItIs" src="https://allredfiretribe.files.wordpress.com/2018/08/back.jpg?" alt="not rendered"/>
         </div>
     )
 }

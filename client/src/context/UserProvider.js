@@ -28,10 +28,7 @@ class UserProvider extends Component {
                 const { user, token } = res.data
                 localStorage.setItem("user", JSON.stringify(user))
                 localStorage.setItem("token", token)
-                this.setState({ 
-                    user, 
-                    token 
-                })
+                this.setState({ user, token })
             })
             .catch(err => this.handleAuthErr(err))
     }
@@ -42,10 +39,7 @@ class UserProvider extends Component {
                 const { user, token } = res.data
                 localStorage.setItem("user", JSON.stringify(user))
                 localStorage.setItem("token", token)
-                this.setState({ 
-                    user, 
-                    token 
-                })
+                this.setState({ user, token })
             })
             .catch(err => this.handleAuthErr(err))
     }

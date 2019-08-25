@@ -17,7 +17,7 @@ const TopNav = props => {
                 <a href="/performances">FIRE SPINNING</a>
                 <a href="/videos">VIDEOS</a>
                 <a href="/music">MUSIC</a>
-                <a href="/shop">STORE</a>
+                <a href="/shop">SHOP</a>
                 <a href="/contact">CONTACT</a>
             </MediaQuery>
             { token && <button onClick={logout}>LOGOUT</button> }

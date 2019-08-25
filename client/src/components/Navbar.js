@@ -13,7 +13,7 @@ const Navbar = props => {
         <a href="/performances">Fire Spinning</a>
         <a href="/videos">Videos</a>
         <a href="/music">Music</a>
-        <a href="/shop">Store</a>
+        <a href="/shop">Shop</a>
         <a href="/contact">Contact</a>
         {/* <a href="/gallery">Gallery</a> */}
         { !token && <a href="/signin">Login</a> }

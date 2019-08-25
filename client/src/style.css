@@ -408,6 +408,11 @@ p > a:hover {
     .contact > input, .shop > input, .performances > input {
         width: 50%;
     }
+    .fb {
+        width: 200px;
+        margin-left: -50px;
+        /* text-align: center; */
+    }
     .fb1 {
         padding: 144px 2px 8px 2px;
         height: 160px;
@@ -424,4 +429,7 @@ p > a:hover {
         height: 200px;
         width: 200px;
     }
+    /* .andSoItIs {
+        margin-right: 40px;
+    } */
 }
