@@ -19,10 +19,11 @@ const Shop = props => {
     return (
         <div>
             <h1>Shop</h1>
+            <p>Our apologies as the images are no longer loading properly on the "Shop" pages. We are working on a solution. We appreciate your patience.</p>
             <div className="shop">
                 {productComponents}
             </div>
-            <div className="xxx">
+            <div>
             <h5>“I think the big message is to Ignite and Unite with your local community and learn how to work with one another inspiring and empowering growth spiritually, mentally, emotionally and physically. Remember you have the power to create and every choice you make is inspiring something.. be a walking example of love, peace and detachment.</h5>
             <h5>I make one of a kind sacred fire toys. I incorporate sacred geometry, The I Ching, Mayan Astrology, and The Gene Keys to make the perfect toy for you. Based of your Date, Time and Place of Birth - <a href="https://www.facebook.com/firespinning/videos/2150147985241812/" target='_blank' rel="noopener noreferrer">see video</a>.</h5>
             <h5>Loving you all”</h5>
