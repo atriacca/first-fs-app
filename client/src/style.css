@@ -330,6 +330,16 @@ p > a:hover {
     height: 500px;
     width: 500px;
 }
+.fb1 > h2 {
+    margin: -250px 50px 50px -237px;
+    color: black;
+    font-family: Arial;
+}
+.fb1 > img {
+    height: 200px;
+    width: 200px;
+    margin: -230px 50px 30px -50px;
+}
 .fb1 {
     font-family: Arial;
     margin: -20px 50px 30px 50px;
@@ -341,6 +351,14 @@ p > a:hover {
     text-decoration: none;
     background-size: 100%;
     background-image: url("https://scontent.fslc1-1.fna.fbcdn.net/v/t1.0-0/c33.0.200.200a/p200x200/56214439_2301241610132448_3864521567606145024_n.jpg?_nc_cat=108&_nc_ht=scontent.fslc1-1.fna&oh=d49759cb3fc5e4e6b0b6fa6c45660b51&oe=5D5BD30A");
+}
+.fb2 > h2 {
+    margin: -20px 50px 50px -300px;
+}
+.fb2 > img {
+    margin: 0px 50px 50px -80px;
+    height: 200px;
+    width: 200px;
 }
 .fb2 {
     font-family: Arial;
