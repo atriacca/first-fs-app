@@ -29,7 +29,7 @@ const Shop = props => {
             <h5>Loving you all”</h5>
             </div>
             <h5>~ Clayton Allred, <a href="https://allredfiretribe.herokuapp.com" target='_blank' rel="noopener noreferrer">AllRedFireTribe.com</a></h5>
-            <img src="https://allredfiretribe.files.wordpress.com/2018/12/47493516_10218053891365125_1887589065180577792_n.jpg" alt="Unable to render"/>
+            <img className="shop" src="https://allredfiretribe.files.wordpress.com/2018/12/47493516_10218053891365125_1887589065180577792_n.jpg" alt="Unable to render"/>
             <h6>THE IGNITE AND UNITE DESIGN WAS CREATED BY RENEE SARASVATI & CLAYTON ALLRED... IT IS A SEED OF LIFE, WITH A FIRE MANDALA, AND THE I-CHING... THIS IS ABOUT DIVINE AWARENESS AND TRANSFORMATION. IGNITE THE FLAME IN YOUR HEART AND UNITE WITH OTHERS TO HELP WALK WITH HUMANITY INTO A LOVE VIBRATION.</h6>
             {/* <p>Please click <a href="https://www.facebook.com/1497506177212073/videos/1871636973132323/" target='_blank' rel="noopener noreferrer">here</a> to view a video on what goes into making one of my staffs.</p> */}
             <p>You may call Clayton at 801-899-FIRE for more information on booking fire spinning performances for private parties or events, to sign up for any lessons, to order any products or with any questions on any of the above. Namaste.</p>
