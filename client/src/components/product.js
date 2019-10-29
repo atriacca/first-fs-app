@@ -1,3 +1,4 @@
+
 let product = [
     {
         title: "White Electric Wizard Contact Fire Staff",
@@ -5,14 +6,14 @@ let product = [
         description: "High quality professional contact fire staff. Solid wood core inscribed with your core energies based on your Gene Keys and Mayan Astrology. Each staff has a personalized message and is signed dated and numbered. Provide your date, time and place of birth when ordering, if possible, as well as the four or five energies that make up the core of who you are. For instance (I am a Beautiful, Loving, Creative, Inspiring, Powerful Man of Light and Love). Each staff measures approx. 57 inches in length and has a solid wood core inside a 1 inch in diameter nickel aluminum outer rod. In my opinion they have the perfect balance between strength and flexibility for advance contact staff moves. These staffs come with screwed wicks that have an extra layer of Kevlar sewn over the top of the screws making wicks last twice as long. Each staff comes standard with 2 & 1/2 feet of 4 inch wide 1/8 inch thick K1 Kevlar on each side (5 feet total). Larger wicks can be ordered for $20 per additional foot of Kevlar. Each staff is an artistic and energetic creation of Clayton Allred and hand crafted by him with lots of beautiful meaning and deep amounts of love. Customized grips can be requested for an additional $20 (otherwise it'll come out the way a finished painting does - as the artist wants). Please provide your favorite color or colors for a custom grip.",
         price: 260,
         inStock: true,
-        imgUrl: "https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/56500710_2520735584621110_4020063370144120832_n.jpg?_nc_cat=106&_nc_ht=scontent.fslc1-2.fna&oh=30772ebc88302db3176fdc7b100d72a3&oe=5D604FFC",
+        imgUrl: "https://scontent-atl3-1.xx.fbcdn.net/v/t45.5328-0/p403x403/56585023_2190393557673470_9064193586723028992_n.jpg?_nc_cat=107&_nc_oc=AQnxiaPMPx0WJuXPgR5mQ_ONWRcXPPzIISZmxvZVLIe0yu7WR0NwsZxTTRChgzdai94&_nc_ht=scontent-atl3-1.xx&oh=0c53b6347736c5b9262a1eb95d51a5f9&oe=5E54A6CB",
         images: [
             {
-                original: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/56500710_2520735584621110_4020063370144120832_n.jpg?_nc_cat=106&_nc_ht=scontent.fslc1-2.fna&oh=30772ebc88302db3176fdc7b100d72a3&oe=5D604FFC',
-                thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/56500710_2520735584621110_4020063370144120832_n.jpg?_nc_cat=106&_nc_ht=scontent.fslc1-2.fna&oh=30772ebc88302db3176fdc7b100d72a3&oe=5D604FFC'
+                original: 'https://scontent-atl3-1.xx.fbcdn.net/v/t45.5328-0/p403x403/56585023_2190393557673470_9064193586723028992_n.jpg?_nc_cat=107&_nc_oc=AQnxiaPMPx0WJuXPgR5mQ_ONWRcXPPzIISZmxvZVLIe0yu7WR0NwsZxTTRChgzdai94&_nc_ht=scontent-atl3-1.xx&oh=0c53b6347736c5b9262a1eb95d51a5f9&oe=5E54A6CB',
+                // thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/56500710_2520735584621110_4020063370144120832_n.jpg?_nc_cat=106&_nc_ht=scontent.fslc1-2.fna&oh=30772ebc88302db3176fdc7b100d72a3&oe=5D604FFC'
               },{
-                original: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p403x403/56523538_2117000941753027_8928063511649583104_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=687d12a52b4fbe3036920599d4f7600d&oe=5D5A0A7D',
-                thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p403x403/56523538_2117000941753027_8928063511649583104_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=687d12a52b4fbe3036920599d4f7600d&oe=5D5A0A7D'
+                original: 'https://scontent-atl3-1.xx.fbcdn.net/v/t45.5328-0/p403x403/56660917_1818102521627897_5630861597191700480_n.jpg?_nc_cat=101&_nc_oc=AQlVFglcNydqaaEnCm8I2NsMPwHygThnGe-YlHh8FjN45e1YAEtUKQ9GdoA9aFi6qKE&_nc_ht=scontent-atl3-1.xx&oh=1a5c034790cac99d7b4dcea33d1f5028&oe=5E1F42D8',
+                // thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p403x403/56523538_2117000941753027_8928063511649583104_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=687d12a52b4fbe3036920599d4f7600d&oe=5D5A0A7D'
               },{
                 original: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p403x403/56521116_2562924027111033_2243712351612174336_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=2e4ee0def51cb276be63da6cfc0270db&oe=5D643142',
                 thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p403x403/56521116_2562924027111033_2243712351612174336_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=2e4ee0def51cb276be63da6cfc0270db&oe=5D643142'
@@ -36,34 +37,34 @@ let product = [
         description: "In my opinion these are the best most durable high impact fire Nunchaku on the market. Solid wood core energetically charged with gene keys and Mayan astrology. 12 inch copper tubing outer shell with high impact ball bearing swivels and chain. Each side has 1.5 feet of 4 inch wide 1/8 inch thick K1 Kevlar with sewn wicks 3 feet of Kevlar total. Warning: these have huge flames and must be kept in motion or with wicks pointing straight up in the air when stopped otherwise you will get burned so dip lightly the first few times until you get the feel for them. ~ Clayton",
         price: 125,
         inStock: true,
-        imgUrl: "https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/s552x414/56583048_2292115827516798_2771109416160722944_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=753b134d9c28cf587923f57e8bb3998a&oe=5D676678",
+        imgUrl: "https://scontent-atl3-1.xx.fbcdn.net/v/t45.5328-0/p180x540/56644419_2102552249793606_7782047386741768192_n.jpg?_nc_cat=104&_nc_oc=AQnyOhlg5BFoJqD3PmaYT-B1dIIri2bOlvETqSPsOEC3uzx-2o-OekOMQS0ZEzgVSnE&_nc_ht=scontent-atl3-1.xx&oh=2a35658f637749baa55f1302c5e9fdc5&oe=5E5AED9E",
         images: [{
-            original: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/56644425_2155796407801729_2890130720938786816_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=f7289a0a51d606d2f453363ad69bea5a&oe=5D7261C5',
-            thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/56644425_2155796407801729_2890130720938786816_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=f7289a0a51d606d2f453363ad69bea5a&oe=5D7261C5'
+            original: 'https://scontent-atl3-1.xx.fbcdn.net/v/t45.5328-0/p180x540/56644419_2102552249793606_7782047386741768192_n.jpg?_nc_cat=104&_nc_oc=AQnyOhlg5BFoJqD3PmaYT-B1dIIri2bOlvETqSPsOEC3uzx-2o-OekOMQS0ZEzgVSnE&_nc_ht=scontent-atl3-1.xx&oh=2a35658f637749baa55f1302c5e9fdc5&oe=5E5AED9E',
+            // thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/56644425_2155796407801729_2890130720938786816_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=f7289a0a51d606d2f453363ad69bea5a&oe=5D7261C5'
           },{
-            original: 'https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/s552x414/56724018_2571848346159961_2213311568068739072_n.jpg?_nc_cat=111&_nc_ht=scontent.fslc1-1.fna&oh=8493e3c567630f0cf5fb301ea90ea779&oe=5D6B46C1',
-            thumbnail: 'https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/s552x414/56724018_2571848346159961_2213311568068739072_n.jpg?_nc_cat=111&_nc_ht=scontent.fslc1-1.fna&oh=8493e3c567630f0cf5fb301ea90ea779&oe=5D6B46C1'
+            original: 'https://scontent-atl3-1.xx.fbcdn.net/v/t45.5328-0/p180x540/56650944_2090749664314311_6086088316220866560_n.jpg?_nc_cat=101&_nc_oc=AQklRgpWeaTrwAb4M1WwoVqUN3otvr5GSaH74VKE7q2jBAoB4xQY6f3kIk2IwL-UW3g&_nc_ht=scontent-atl3-1.xx&oh=a67a37a86a8c23c63f3f9a66447e28ab&oe=5E1A69B8',
+            // thumbnail: 'https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/s552x414/56724018_2571848346159961_2213311568068739072_n.jpg?_nc_cat=111&_nc_ht=scontent.fslc1-1.fna&oh=8493e3c567630f0cf5fb301ea90ea779&oe=5D6B46C1'
           },{
-            original: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/s552x414/56546545_2732772143416295_1223781880805982208_n.jpg?_nc_cat=101&_nc_ht=scontent.fslc1-2.fna&oh=da9b7ee97ba2b09e9d9c8866ba467319&oe=5D740285',
-            thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/s552x414/56546545_2732772143416295_1223781880805982208_n.jpg?_nc_cat=101&_nc_ht=scontent.fslc1-2.fna&oh=da9b7ee97ba2b09e9d9c8866ba467319&oe=5D740285'
+            original: 'https://scontent-atl3-1.xx.fbcdn.net/v/t45.5328-0/p403x403/56591193_2045163168934138_9220274046879399936_n.jpg?_nc_cat=104&_nc_oc=AQnEA7Erakv8M37WGODOyBeXbslL8nHLbv7kcbtWCf8PoqXqZt31nEbiaJpYlhEiovQ&_nc_ht=scontent-atl3-1.xx&oh=6ae438c4a10e43f03a98c781d3575007&oe=5E5B52E1',
+            // thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/s552x414/56546545_2732772143416295_1223781880805982208_n.jpg?_nc_cat=101&_nc_ht=scontent.fslc1-2.fna&oh=da9b7ee97ba2b09e9d9c8866ba467319&oe=5D740285'
           },{
-            original: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/s552x414/56654500_3240378642646328_8722588556767264768_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=12cc27ce5c93b172d838f210341f25be&oe=5D69F54A',
-            thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/s552x414/56654500_3240378642646328_8722588556767264768_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=12cc27ce5c93b172d838f210341f25be&oe=5D69F54A'
+            original: 'https://scontent-atl3-1.xx.fbcdn.net/v/t45.5328-0/s552x414/56586634_2136771893076565_5131655250570117120_n.jpg?_nc_cat=107&_nc_oc=AQm54a7zQLIReew_vjsF040kvNGeR7JZweHCdyOwJsoFujHWj_lGYJkrJy6dQteQ8Fo&_nc_ht=scontent-atl3-1.xx&oh=05939c412e4f992c1bdf28af8fbf8d1e&oe=5E231817',
+            // thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/s552x414/56654500_3240378642646328_8722588556767264768_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=12cc27ce5c93b172d838f210341f25be&oe=5D69F54A'
           },{
-            original: 'https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/s552x414/56586634_2136771893076565_5131655250570117120_n.jpg?_nc_cat=107&_nc_ht=scontent.fslc1-1.fna&oh=404382b3e2d99167dfe958dd3231381a&oe=5D5D5717',
-            thumbnail: 'https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/s552x414/56586634_2136771893076565_5131655250570117120_n.jpg?_nc_cat=107&_nc_ht=scontent.fslc1-1.fna&oh=404382b3e2d99167dfe958dd3231381a&oe=5D5D5717'
+            original: 'https://scontent-atl3-1.xx.fbcdn.net/v/t45.5328-0/s552x414/56571530_2083186321718531_8625625568366297088_n.jpg?_nc_cat=109&_nc_oc=AQmjjajV1LfReLU1Xj3EwvL1rdCLX2qwKb_h04JCfsxMOAgcmP2iZw21gZ1I26UK_9c&_nc_ht=scontent-atl3-1.xx&oh=978c30f3844501429d07b4e806b268f0&oe=5E55199B',
+            // thumbnail: 'https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/s552x414/56586634_2136771893076565_5131655250570117120_n.jpg?_nc_cat=107&_nc_ht=scontent.fslc1-1.fna&oh=404382b3e2d99167dfe958dd3231381a&oe=5D5D5717'
           },{
-            original: 'https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/p403x403/56554707_2593839004021730_4815580562783731712_n.jpg?_nc_cat=111&_nc_ht=scontent.fslc1-1.fna&oh=be74052c3d0291959f26bccffdb9a6b6&oe=5D6814DF',
-            thumbnail: 'https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/p403x403/56554707_2593839004021730_4815580562783731712_n.jpg?_nc_cat=111&_nc_ht=scontent.fslc1-1.fna&oh=be74052c3d0291959f26bccffdb9a6b6&oe=5D6814DF'
+            original: 'https://scontent-atl3-1.xx.fbcdn.net/v/t45.5328-0/s552x414/56546545_2732772143416295_1223781880805982208_n.jpg?_nc_cat=101&_nc_oc=AQnlu3PuNgC0YXZTdJUIlQ0_E02ijWjQ-9rK2mAFzmTDZAKEoPdJae2iuH9WM4cj3MM&_nc_ht=scontent-atl3-1.xx&oh=b06c881b6d08c35b7295b7a58cd1cde2&oe=5E615085',
+            // thumbnail: 'https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/p403x403/56554707_2593839004021730_4815580562783731712_n.jpg?_nc_cat=111&_nc_ht=scontent.fslc1-1.fna&oh=be74052c3d0291959f26bccffdb9a6b6&oe=5D6814DF'
           },{
-            original: 'https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/p403x403/56554707_2593839004021730_4815580562783731712_n.jpg?_nc_cat=111&_nc_ht=scontent.fslc1-1.fna&oh=be74052c3d0291959f26bccffdb9a6b6&oe=5D6814DF',
-            thumbnail: 'https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/p403x403/56554707_2593839004021730_4815580562783731712_n.jpg?_nc_cat=111&_nc_ht=scontent.fslc1-1.fna&oh=be74052c3d0291959f26bccffdb9a6b6&oe=5D6814DF'
-          },{
-            original: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/s552x414/56583048_2292115827516798_2771109416160722944_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=753b134d9c28cf587923f57e8bb3998a&oe=5D676678',
-            thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/s552x414/56583048_2292115827516798_2771109416160722944_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=753b134d9c28cf587923f57e8bb3998a&oe=5D676678'
-          },{
-            original: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/56650944_2090749664314311_6086088316220866560_n.jpg?_nc_cat=101&_nc_ht=scontent.fslc1-2.fna&oh=06d4a1e1fa521e5e649f02a1d480d5b8&oe=5D54A8B8',
-            thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/56650944_2090749664314311_6086088316220866560_n.jpg?_nc_cat=101&_nc_ht=scontent.fslc1-2.fna&oh=06d4a1e1fa521e5e649f02a1d480d5b8&oe=5D54A8B8'
+            original: 'https://scontent-atl3-1.xx.fbcdn.net/v/t45.5328-0/s552x414/56724018_2571848346159961_2213311568068739072_n.jpg?_nc_cat=111&_nc_oc=AQlkLsEgWXvBgMADQ8o9oefZaQP5DuY46gDhCWB-mlRk6xOV_JS3OAdjWlwtx63bTks&_nc_ht=scontent-atl3-1.xx&oh=65c0db25e25544f52bc908948ee16be4&oe=5E5894C1',
+            // thumbnail: 'https://scontent.fslc1-1.fna.fbcdn.net/v/t45.5328-0/p403x403/56554707_2593839004021730_4815580562783731712_n.jpg?_nc_cat=111&_nc_ht=scontent.fslc1-1.fna&oh=be74052c3d0291959f26bccffdb9a6b6&oe=5D6814DF'
+          // },{
+            // original: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/s552x414/56583048_2292115827516798_2771109416160722944_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=753b134d9c28cf587923f57e8bb3998a&oe=5D676678',
+            // thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/s552x414/56583048_2292115827516798_2771109416160722944_n.jpg?_nc_cat=105&_nc_ht=scontent.fslc1-2.fna&oh=753b134d9c28cf587923f57e8bb3998a&oe=5D676678'
+          // },{
+            // original: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/56650944_2090749664314311_6086088316220866560_n.jpg?_nc_cat=101&_nc_ht=scontent.fslc1-2.fna&oh=06d4a1e1fa521e5e649f02a1d480d5b8&oe=5D54A8B8',
+            // thumbnail: 'https://scontent.fslc1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/56650944_2090749664314311_6086088316220866560_n.jpg?_nc_cat=101&_nc_ht=scontent.fslc1-2.fna&oh=06d4a1e1fa521e5e649f02a1d480d5b8&oe=5D54A8B8'
           }
         ]
     },{
