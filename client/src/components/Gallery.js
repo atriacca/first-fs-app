@@ -49,7 +49,7 @@ class Gallery extends Component {
  
     return (
       <ImageGallery items={images} />
-    );
+    )
   }
  
 }

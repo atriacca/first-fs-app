@@ -35,7 +35,9 @@ p > a {
 }
 img {
     height: auto;
-    max-height: 90vh;
+    /* max-height: 90vh; */
+    /* max-height: 90%; */
+    width: auto;
     width: 100vw;
     /* max-width: 90vw; */
     align-content: center;
@@ -308,10 +310,14 @@ p > a:hover {
     background-image: URL("https://images.pexels.com/photos/672636/pexels-photo-672636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 } */
 .card > img {
-    border: 1px solid black;
+    border: 0px solid lightgreen;
     max-width: 270px;
+    /* max-height: 30%; */
+    /* margin: 0 0 50px 0; */
+    /* transform: rotate(90deg); */
     width: 90%;
-    margin: 5px 5px;
+    margin: 5px 5px -5px 5px;
+    padding: 10px;
 }
 .card > h3, .card > p {
     margin: 5px;

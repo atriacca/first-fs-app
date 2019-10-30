@@ -19,7 +19,7 @@ const Shop = props => {
     return (
         <div>
             <h1>Shop</h1>
-            <p>Our apologies as the images are no longer loading properly on the "Shop" pages. We are working on a solution. We appreciate your patience.</p>
+            {/* <p>Our apologies as the images are no longer loading properly on the "Shop" pages. We are working on a solution. We appreciate your patience.</p> */}
             <div className="shop">
                 {productComponents}
             </div>
